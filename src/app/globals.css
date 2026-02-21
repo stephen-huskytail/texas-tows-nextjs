@@ -97,6 +97,55 @@
     @apply text-lg text-gray-600 mt-3 max-w-2xl;
   }
 
+  /* ── Blog prose ─────────────────────────────────────────────────────── */
+  .blog-prose {
+    @apply text-gray-700 leading-relaxed text-base;
+  }
+
+  .blog-prose p {
+    @apply mb-5 leading-relaxed;
+  }
+
+  .blog-prose h2 {
+    @apply text-2xl font-heading font-bold text-[#0a2340] mt-10 mb-4 leading-tight;
+  }
+
+  .blog-prose h3 {
+    @apply text-xl font-heading font-bold text-[#0a2340] mt-8 mb-3 leading-tight;
+  }
+
+  .blog-prose h4 {
+    @apply text-lg font-heading font-semibold text-[#0a2340] mt-6 mb-2;
+  }
+
+  .blog-prose ul {
+    @apply list-disc pl-6 mb-5 space-y-2 text-gray-700;
+  }
+
+  .blog-prose ol {
+    @apply list-decimal pl-6 mb-5 space-y-2 text-gray-700;
+  }
+
+  .blog-prose li {
+    @apply leading-relaxed;
+  }
+
+  .blog-prose strong {
+    @apply font-semibold text-[#0a2340];
+  }
+
+  .blog-prose a {
+    @apply text-[#045cb4] font-medium hover:underline;
+  }
+
+  .blog-prose blockquote {
+    @apply border-l-4 border-[#045cb4] pl-4 italic text-gray-600 my-6;
+  }
+
+  .blog-prose hr {
+    @apply border-gray-200 my-8;
+  }
+
   /* ── FAQ accordion ───────────────────────────────────────────────────── */
   .faq-answer {
     overflow: hidden;

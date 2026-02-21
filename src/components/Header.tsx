@@ -7,13 +7,13 @@ import { usePathname } from "next/navigation";
 import {
   Phone, Menu, X, ChevronDown,
   Truck, Wrench, Car, Trash2, AlertTriangle, Anchor, Layers, Home,
-  RefreshCw, ParkingCircle, MapPin, Star, BookOpen, Mail, Info, Zap,
+  RefreshCw, ParkingCircle, MapPin, Star, BookOpen, Mail, Info,
 } from "lucide-react";
 import { BUSINESS, SERVICES, AREA_PAGES } from "@/lib/constants";
 import QuoteModal from "./QuoteModal";
 
 const SERVICE_ICONS: Record<string, React.ElementType> = {
-  Truck, Wrench, Car, Trash2, AlertTriangle, Anchor, Layers, Home, RefreshCw, ParkingCircle, Zap,
+  Truck, Wrench, Car, Trash2, AlertTriangle, Anchor, Layers, Home, RefreshCw, ParkingCircle,
 };
 
 export default function Header() {
@@ -70,7 +70,7 @@ export default function Header() {
         }`}
       >
         <div className="container-tx">
-          <div className="flex items-center justify-between h-16 md:h-18">
+          <div className="flex items-center justify-between h-16 md:h-[72px]">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 flex-shrink-0">
               <Image

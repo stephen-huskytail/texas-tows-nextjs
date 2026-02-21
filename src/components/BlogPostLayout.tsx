@@ -33,7 +33,7 @@ export default function BlogPostLayout({
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0a2340] py-20 md:py-28">
+      <section className="bg-[#0a2340] pt-24 pb-12 md:pt-32 md:pb-16">
         <div className="container-tx">
           <div className="max-w-3xl">
             <div className="text-sm text-white/60 mb-3">
@@ -67,34 +67,25 @@ export default function BlogPostLayout({
 
       {/* Featured Image */}
       {featuredImage && (
-        <div className="w-full bg-gray-100 overflow-hidden" style={{ maxHeight: 480 }}>
-          <div className="relative w-full" style={{ height: 480 }}>
-            <Image
-              src={featuredImage}
-              alt={featuredImageAlt || title}
-              fill
-              className="object-cover"
-              priority
-              sizes="100vw"
-            />
-          </div>
+        <div className="w-full h-64 md:h-96 relative overflow-hidden bg-gray-200">
+          <Image
+            src={featuredImage}
+            alt={featuredImageAlt || title}
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
         </div>
       )}
 
       {/* Content + Sidebar */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 md:py-16">
         <div className="container-tx">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Main Content */}
-            <article className="lg:col-span-2 prose prose-slate max-w-none
-              prose-headings:font-heading prose-headings:font-bold prose-headings:text-[#0a2340]
-              prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-              prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-              prose-p:text-gray-600 prose-p:leading-relaxed prose-p:mb-5
-              prose-ul:text-gray-600 prose-li:mb-1
-              prose-strong:text-[#0a2340]
-              prose-a:text-[#045cb4] prose-a:no-underline hover:prose-a:underline
-            ">
+
+            {/* Main Content — custom prose styles without relying on the plugin */}
+            <article className="lg:col-span-2 blog-prose">
               {children}
             </article>
 

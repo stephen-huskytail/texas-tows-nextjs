@@ -145,14 +145,6 @@ export const SERVICES = [
     icon: "ParkingCircle",
     image: PHOTOS.truckService,
   },
-  {
-    id: "battery-service",
-    name: "Battery Jump Start",
-    slug: "/services/battery-service",
-    description: "On-site battery jump start and replacement service — 24/7, we come to you.",
-    icon: "Zap",
-    image: PHOTOS.truck6,
-  },
 ];
 
 export const TESTIMONIALS = [

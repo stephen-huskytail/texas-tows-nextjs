@@ -14,7 +14,6 @@ const servicePages = [
   "stuck-in-garage-towing",
   "secondary-towing",
   "unattended-towing",
-  "battery-service",
 ];
 
 const blogPosts = [
