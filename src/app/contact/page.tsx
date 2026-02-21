@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, getCurrentPromo } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
@@ -33,6 +33,8 @@ const schema = {
 };
 
 export default function ContactPage() {
+  const promo = getCurrentPromo();
+
   return (
     <>
       <script
@@ -109,8 +111,9 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
+              {/* Monthly rotating promo reminder */}
               <div className="mt-6 p-4 rounded-xl font-semibold text-[#0a2340] text-sm bg-[#fef15f]">
-                🎖️ Remember: 15% discount for Military, Teachers &amp; First Responders — just mention it when you call!
+                🎖️ {promo.shortLabel} — just mention it when you call!
               </div>
             </div>
 
