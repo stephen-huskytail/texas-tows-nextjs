@@ -67,7 +67,7 @@ export default function Header() {
       <QuoteModal isOpen={quoteOpen} onClose={() => setQuoteOpen(false)} />
 
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-[36px] left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? "bg-white shadow-lg" : "bg-white shadow-sm"
         }`}
       >
@@ -238,10 +238,10 @@ export default function Header() {
         {mobileOpen && (
           <>
             <div
-              className="fixed inset-0 top-[72px] bg-black/50 z-40 lg:hidden"
+              className="fixed inset-0 top-[108px] bg-black/50 z-40 lg:hidden"
               onClick={() => setMobileOpen(false)}
             />
-            <div className="fixed top-[72px] left-0 right-0 bottom-0 bg-white z-50 overflow-y-auto lg:hidden">
+            <div className="fixed top-[108px] left-0 right-0 bottom-0 bg-white z-50 overflow-y-auto lg:hidden">
               <nav className="p-4 space-y-1">
                 <Link href="/" className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-800 font-semibold hover:bg-blue-50 hover:text-[#045cb4] transition-colors">
                   Home

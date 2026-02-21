@@ -86,7 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ExitIntent />
         <TrustBar />
         <Header />
-        <main className="pt-16">{children}</main>
+        <main className="pt-[108px]">{children}</main>
         <Footer />
         <StickyMobileCTA />
 
