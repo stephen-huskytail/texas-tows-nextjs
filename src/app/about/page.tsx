@@ -49,20 +49,20 @@ export default function AboutPage() {
               <h2 className="section-heading mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Texas Tows Inc. was founded in 2015 by Israel Alderete with a simple mission: provide Dallas drivers with honest, professional towing service they could actually count on. After years of watching drivers get overcharged, misled, and left waiting by unreliable operators, Israel set out to build something different.
+                  Texas Tows Inc. is a family-owned towing company that has been proudly serving the Dallas community since 2015. We were built on a genuine passion for vehicles and an even deeper passion for helping people when they need it most — because a breakdown is never just a mechanical problem. It&apos;s a stressful, sometimes scary moment, and you deserve a team that treats it that way.
                 </p>
                 <p>
-                  What started as a single truck and a commitment to doing things right has grown into one of Dallas&apos;s most trusted towing companies — with a fleet of modern flatbed trucks, a team of certified drivers, and a {BUSINESS.rating}-star rating built one honest job at a time.
+                  From day one, we&apos;ve operated with a customer-first, can-do mindset. That means we answer every call with urgency, we communicate clearly, and we never leave you guessing. What started as a single truck and a commitment to doing things right has grown into one of Dallas&apos;s most trusted towing companies — with a fleet of modern flatbed trucks, a team of certified drivers, and a {BUSINESS.rating}-star rating built one honest job at a time.
                 </p>
                 <p>
-                  Every driver on our team is trained to treat your vehicle with the same care they&apos;d give their own. Every quote is transparent. Every call is answered — 24 hours a day, 7 days a week, 365 days a year.
+                  One thing that&apos;s never changed: we tow every vehicle exactly the way the manufacturer recommends — every time, all the time. No shortcuts. No guesswork. The safety of our customers and their vehicles is the non-negotiable standard we hold ourselves to on every single call.
                 </p>
               </div>
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-2xl">
               <Image
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/SoWljyPzCGzFwusm.jpeg"
-                alt="Texas Tows Inc. team — Israel and crew in front of the red and white tow trucks in Dallas, TX"
+                alt="Texas Tows Inc. team in front of the red and white tow trucks in Dallas, TX"
                 width={1280}
                 height={960}
                 className="w-full h-80 md:h-96 object-cover"
