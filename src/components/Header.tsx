@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import {
   Phone, Menu, X, ChevronDown,
   Truck, Wrench, Car, Trash2, AlertTriangle, Anchor, Layers, Home,
-  RefreshCw, ParkingCircle, MapPin, Star, BookOpen, Mail, Info,
+  RefreshCw, ParkingCircle, MapPin,
 } from "lucide-react";
 import { BUSINESS, SERVICES, AREA_PAGES } from "@/lib/constants";
 import QuoteModal from "./QuoteModal";
@@ -34,14 +34,12 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileOpen(false);
     setServicesOpen(false);
     setAreasOpen(false);
   }, [pathname]);
 
-  // Close dropdowns on outside click
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) setServicesOpen(false);
@@ -51,7 +49,6 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  // Lock body scroll when mobile menu open
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
@@ -60,17 +57,23 @@ export default function Header() {
   const primaryAreas = AREA_PAGES.filter((a) => a.primary);
   const secondaryAreas = AREA_PAGES.filter((a) => !a.primary);
 
+  const navLinkClass = (active: boolean) =>
+    `px-3 py-2 rounded-md text-sm font-semibold transition-colors ${
+      active ? "text-[#045cb4]" : "text-gray-700 hover:text-[#045cb4]"
+    }`;
+
   return (
     <>
       <QuoteModal isOpen={quoteOpen} onClose={() => setQuoteOpen(false)} />
 
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm shadow-sm"
+          scrolled ? "bg-white shadow-lg" : "bg-white shadow-sm"
         }`}
       >
         <div className="container-tx">
-          <div className="flex items-center justify-between h-16 md:h-[72px]">
+          <div className="flex items-center justify-between h-[72px]">
+
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 flex-shrink-0">
               <Image
@@ -78,7 +81,7 @@ export default function Header() {
                 alt="Texas Tows Inc. Logo"
                 width={48}
                 height={48}
-                className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                className="w-11 h-11 object-contain"
                 priority
               />
               <div className="hidden sm:block">
@@ -87,37 +90,20 @@ export default function Header() {
               </div>
             </Link>
 
-            {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-1">
-              <Link
-                href="/"
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                  pathname === "/" ? "text-[#045cb4] bg-blue-50" : "text-gray-700 hover:text-[#045cb4] hover:bg-blue-50"
-                }`}
-              >
-                <Home size={15} />
-                Home
-              </Link>
+            {/* Desktop Nav — clean, no icons on links */}
+            <nav className="hidden lg:flex items-center gap-0.5">
 
-              <Link
-                href="/about"
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                  pathname === "/about" ? "text-[#045cb4] bg-blue-50" : "text-gray-700 hover:text-[#045cb4] hover:bg-blue-50"
-                }`}
-              >
-                <Info size={15} />
-                About
-              </Link>
+              <Link href="/" className={navLinkClass(pathname === "/")}>Home</Link>
+              <Link href="/about" className={navLinkClass(pathname === "/about")}>About</Link>
 
               {/* Services Dropdown */}
               <div ref={servicesRef} className="relative">
                 <button
                   onClick={() => { setServicesOpen(!servicesOpen); setAreasOpen(false); }}
-                  className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                    pathname.startsWith("/services") ? "text-[#045cb4] bg-blue-50" : "text-gray-700 hover:text-[#045cb4] hover:bg-blue-50"
+                  className={`flex items-center gap-1 px-3 py-2 rounded-md text-sm font-semibold transition-colors ${
+                    pathname.startsWith("/services") ? "text-[#045cb4]" : "text-gray-700 hover:text-[#045cb4]"
                   }`}
                 >
-                  <Wrench size={15} />
                   Services
                   <ChevronDown size={14} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
                 </button>
@@ -127,7 +113,7 @@ export default function Header() {
                       href="/services"
                       className="flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-[#045cb4] hover:bg-blue-50 transition-colors border-b border-gray-100 mb-1"
                     >
-                      <Truck size={15} />
+                      <Truck size={14} />
                       All Services
                     </Link>
                     {SERVICES.map((s) => {
@@ -138,7 +124,7 @@ export default function Header() {
                           href={s.slug}
                           className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:text-[#045cb4] hover:bg-blue-50 transition-colors"
                         >
-                          <Icon size={14} className="text-[#045cb4]" />
+                          <Icon size={13} className="text-[#045cb4] flex-shrink-0" />
                           {s.name}
                         </Link>
                       );
@@ -151,11 +137,10 @@ export default function Header() {
               <div ref={areasRef} className="relative">
                 <button
                   onClick={() => { setAreasOpen(!areasOpen); setServicesOpen(false); }}
-                  className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                    pathname.startsWith("/service-area") ? "text-[#045cb4] bg-blue-50" : "text-gray-700 hover:text-[#045cb4] hover:bg-blue-50"
+                  className={`flex items-center gap-1 px-3 py-2 rounded-md text-sm font-semibold transition-colors ${
+                    pathname.startsWith("/service-area") ? "text-[#045cb4]" : "text-gray-700 hover:text-[#045cb4]"
                   }`}
                 >
-                  <MapPin size={15} />
                   Service Area
                   <ChevronDown size={14} className={`transition-transform ${areasOpen ? "rotate-180" : ""}`} />
                 </button>
@@ -165,7 +150,7 @@ export default function Header() {
                       href="/service-area"
                       className="flex items-center gap-2 text-sm font-bold text-[#045cb4] hover:underline mb-4"
                     >
-                      <MapPin size={15} />
+                      <MapPin size={14} />
                       View Full Service Area Map →
                     </Link>
                     <div className="grid grid-cols-3 gap-x-4 gap-y-1">
@@ -177,7 +162,7 @@ export default function Header() {
                             href={`/service-area/${a.slug}`}
                             className="flex items-center gap-1.5 py-1 text-sm text-gray-700 hover:text-[#045cb4] transition-colors"
                           >
-                            <MapPin size={12} className="text-[#045cb4] flex-shrink-0" />
+                            <MapPin size={11} className="text-[#045cb4] flex-shrink-0" />
                             {a.name}
                           </Link>
                         ))}
@@ -191,7 +176,7 @@ export default function Header() {
                               href={`/service-area/${a.slug}`}
                               className="flex items-center gap-1.5 py-1 text-sm text-gray-700 hover:text-[#045cb4] transition-colors"
                             >
-                              <MapPin size={12} className="text-gray-400 flex-shrink-0" />
+                              <MapPin size={11} className="text-gray-400 flex-shrink-0" />
                               {a.name}
                             </Link>
                           ))}
@@ -202,50 +187,23 @@ export default function Header() {
                 )}
               </div>
 
-              <Link
-                href="/reviews"
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                  pathname === "/reviews" ? "text-[#045cb4] bg-blue-50" : "text-gray-700 hover:text-[#045cb4] hover:bg-blue-50"
-                }`}
-              >
-                <Star size={15} />
-                Reviews
-              </Link>
-
-              <Link
-                href="/blog"
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                  pathname === "/blog" ? "text-[#045cb4] bg-blue-50" : "text-gray-700 hover:text-[#045cb4] hover:bg-blue-50"
-                }`}
-              >
-                <BookOpen size={15} />
-                Blog
-              </Link>
-
-              <Link
-                href="/contact"
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                  pathname === "/contact" ? "text-[#045cb4] bg-blue-50" : "text-gray-700 hover:text-[#045cb4] hover:bg-blue-50"
-                }`}
-              >
-                <Mail size={15} />
-                Contact
-              </Link>
+              <Link href="/reviews" className={navLinkClass(pathname === "/reviews")}>Reviews</Link>
+              <Link href="/contact" className={navLinkClass(pathname === "/contact")}>Contact</Link>
             </nav>
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <button
                 onClick={() => setQuoteOpen(true)}
-                className="text-sm font-semibold text-[#045cb4] hover:underline"
+                className="text-sm font-semibold text-[#045cb4] hover:underline whitespace-nowrap"
               >
                 Free Quote
               </button>
               <a
                 href={BUSINESS.phoneHref}
-                className="flex items-center gap-2 bg-[#045cb4] text-white px-4 py-2.5 rounded-lg font-heading font-semibold text-sm hover:bg-[#0a2340] transition-colors shadow-md"
+                className="flex items-center gap-2 bg-[#045cb4] text-white px-4 py-2.5 rounded-lg font-heading font-semibold text-sm hover:bg-[#0a2340] transition-colors shadow-md whitespace-nowrap"
               >
-                <Phone size={16} />
+                <Phone size={15} />
                 {BUSINESS.phone}
               </a>
             </div>
@@ -254,7 +212,7 @@ export default function Header() {
             <div className="flex lg:hidden items-center gap-2">
               <a
                 href={BUSINESS.phoneHref}
-                className="flex items-center gap-1.5 bg-[#045cb4] text-white px-3 py-2 rounded-lg font-semibold text-sm"
+                className="flex items-center gap-1.5 bg-[#045cb4] text-white px-3 py-2 rounded-lg text-sm font-semibold"
               >
                 <Phone size={15} />
                 <span className="hidden sm:inline">{BUSINESS.phone}</span>
@@ -275,16 +233,16 @@ export default function Header() {
         {mobileOpen && (
           <>
             <div
-              className="fixed inset-0 top-16 bg-black/50 z-40 lg:hidden"
+              className="fixed inset-0 top-[72px] bg-black/50 z-40 lg:hidden"
               onClick={() => setMobileOpen(false)}
             />
-            <div className="fixed top-16 left-0 right-0 bottom-0 bg-white z-50 overflow-y-auto lg:hidden">
+            <div className="fixed top-[72px] left-0 right-0 bottom-0 bg-white z-50 overflow-y-auto lg:hidden">
               <nav className="p-4 space-y-1">
                 <Link href="/" className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-800 font-semibold hover:bg-blue-50 hover:text-[#045cb4] transition-colors">
-                  <Home size={18} className="text-[#045cb4]" /> Home
+                  Home
                 </Link>
                 <Link href="/about" className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-800 font-semibold hover:bg-blue-50 hover:text-[#045cb4] transition-colors">
-                  <Info size={18} className="text-[#045cb4]" /> About
+                  About
                 </Link>
 
                 {/* Mobile Services Accordion */}
@@ -293,7 +251,7 @@ export default function Header() {
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                     className="w-full flex items-center justify-between px-4 py-3 rounded-lg text-gray-800 font-semibold hover:bg-blue-50 hover:text-[#045cb4] transition-colors"
                   >
-                    <span className="flex items-center gap-3"><Wrench size={18} className="text-[#045cb4]" /> Services</span>
+                    <span>Services</span>
                     <ChevronDown size={16} className={`transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`} />
                   </button>
                   <div
@@ -307,7 +265,7 @@ export default function Header() {
                       const Icon = SERVICE_ICONS[s.icon] || Truck;
                       return (
                         <Link key={s.id} href={s.slug} className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:text-[#045cb4] hover:bg-blue-50 rounded-lg transition-colors">
-                          <Icon size={14} className="text-[#045cb4]" /> {s.name}
+                          <Icon size={13} className="text-[#045cb4]" /> {s.name}
                         </Link>
                       );
                     })}
@@ -320,7 +278,7 @@ export default function Header() {
                     onClick={() => setMobileAreasOpen(!mobileAreasOpen)}
                     className="w-full flex items-center justify-between px-4 py-3 rounded-lg text-gray-800 font-semibold hover:bg-blue-50 hover:text-[#045cb4] transition-colors"
                   >
-                    <span className="flex items-center gap-3"><MapPin size={18} className="text-[#045cb4]" /> Service Area</span>
+                    <span>Service Area</span>
                     <ChevronDown size={16} className={`transition-transform ${mobileAreasOpen ? "rotate-180" : ""}`} />
                   </button>
                   <div
@@ -332,20 +290,20 @@ export default function Header() {
                     </Link>
                     {AREA_PAGES.map((a) => (
                       <Link key={a.slug} href={`/service-area/${a.slug}`} className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:text-[#045cb4] hover:bg-blue-50 rounded-lg transition-colors">
-                        <MapPin size={12} className="text-[#045cb4]" /> {a.name}
+                        <MapPin size={11} className="text-[#045cb4]" /> {a.name}
                       </Link>
                     ))}
                   </div>
                 </div>
 
                 <Link href="/reviews" className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-800 font-semibold hover:bg-blue-50 hover:text-[#045cb4] transition-colors">
-                  <Star size={18} className="text-[#045cb4]" /> Reviews
+                  Reviews
                 </Link>
                 <Link href="/blog" className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-800 font-semibold hover:bg-blue-50 hover:text-[#045cb4] transition-colors">
-                  <BookOpen size={18} className="text-[#045cb4]" /> Blog
+                  Blog
                 </Link>
                 <Link href="/contact" className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-800 font-semibold hover:bg-blue-50 hover:text-[#045cb4] transition-colors">
-                  <Mail size={18} className="text-[#045cb4]" /> Contact
+                  Contact
                 </Link>
 
                 <div className="pt-4 space-y-3 border-t border-gray-100">

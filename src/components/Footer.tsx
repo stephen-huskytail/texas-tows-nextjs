@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
               <Image
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/YsJDNiJcEXOIFtqz.png"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/vvORBwXUFKXegenK.png"
                 alt="Texas Tows Inc. Logo"
                 width={56}
                 height={56}
@@ -157,6 +157,7 @@ export default function Footer() {
         <div className="container-tx flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
           <p>© {currentYear} {BUSINESS.name}. All rights reserved. TDLR #{BUSINESS.tdlr}.</p>
           <div className="flex items-center gap-4">
+            <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
             <Link href="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</Link>
