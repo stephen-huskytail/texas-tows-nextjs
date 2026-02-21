@@ -83,27 +83,29 @@ export default function HomePage() {
               </span>
             </div>
 
-            {/* H1 — matches original sizing exactly */}
+            {/* H1 — 3 lines matching original exactly */}
             <h1
               className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5"
               style={{ fontFamily: "Poppins, sans-serif", textShadow: "0 2px 16px rgba(0,0,0,0.5)" }}
             >
-              Dallas&apos;s Best-Rated Towing Service<br />
-              <span style={{ color: "#fef15f" }}>— Available 24/7</span>
+              Dallas&apos;s Best-Rated<br />
+              <span style={{ color: "#fef15f" }}>Towing Service</span><br />
+              — Available 24/7
             </h1>
 
             <p className="text-lg md:text-xl text-white/85 mb-8 leading-relaxed">
               Your search for a reliable towing company is over. Fast response, transparent pricing, and a team that treats your vehicle like our own.
             </p>
 
-            {/* Phone CTA — full width pill, stacked above quote button */}
+            {/* Phone CTA — full width, no right badge, matching original */}
             <a
               href={BUSINESS.phoneHref}
-              className="flex items-center gap-3 mb-6 rounded-2xl px-5 py-4 text-slate-900 font-bold shadow-2xl transition-all hover:scale-[1.02] active:scale-100 w-full max-w-sm"
+              className="flex items-center gap-3 mb-4 rounded-2xl px-5 py-4 text-slate-900 font-bold shadow-2xl transition-all hover:scale-[1.02] active:scale-100 w-full"
               style={{
                 background: "linear-gradient(135deg, #fef15f 0%, #f5c800 100%)",
                 fontFamily: "Poppins, sans-serif",
                 boxShadow: "0 0 0 4px rgba(254,241,95,0.4), 0 12px 40px rgba(0,0,0,0.45)",
+                maxWidth: "480px",
               }}
               aria-label="Emergency Towing — Call Texas Tows Inc. now"
             >
@@ -112,9 +114,8 @@ export default function HomePage() {
               </span>
               <span className="flex-1 min-w-0">
                 <span className="block text-xs font-bold uppercase tracking-wider text-slate-600 leading-none mb-1">Emergency Towing — 24/7</span>
-                <span className="block text-lg sm:text-xl font-extrabold leading-tight">{BUSINESS.phone}</span>
+                <span className="block text-xl sm:text-2xl font-extrabold leading-tight">{BUSINESS.phone}</span>
               </span>
-              <span className="flex-shrink-0 text-xs font-black bg-slate-900 text-yellow-300 rounded-full px-2.5 py-1.5 uppercase tracking-widest hidden sm:inline">24/7</span>
             </a>
 
             {/* Quote button — below phone CTA */}
@@ -122,10 +123,10 @@ export default function HomePage() {
               <HomeHeroQuote />
             </div>
 
-            {/* Serving line — white/70 with text shadow so it reads against any background */}
+            {/* Serving line — matches original text exactly */}
             <div className="flex items-center gap-2 mt-6 text-sm font-semibold" style={{ color: "rgba(255,255,255,0.85)", textShadow: "0 1px 8px rgba(0,0,0,0.7)" }}>
               <MapPin className="w-4 h-4 text-blue-300 flex-shrink-0" />
-              <span>Serving Dallas &amp; Surrounding Areas · {BUSINESS.hours}</span>
+              <span>Serving Dallas &amp; Surrounding Areas · 24/7 — 365 Days a Year</span>
             </div>
           </div>
         </div>
