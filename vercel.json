@@ -1,0 +1,53 @@
+{
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=3600" }
+      ]
+    },
+    {
+      "source": "/_next/static/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/services/battery-service/", "destination": "/services/battery-service", "permanent": true },
+    { "source": "/services/towing-service/", "destination": "/services/towing-service", "permanent": true },
+    { "source": "/services/roadside-assistance/", "destination": "/services/roadside-assistance", "permanent": true },
+    { "source": "/services/vehicle-transport/", "destination": "/services/vehicle-transport", "permanent": true },
+    { "source": "/services/junk-car-removal/", "destination": "/services/junk-car-removal", "permanent": true },
+    { "source": "/services/accident-recovery/", "destination": "/services/accident-recovery", "permanent": true },
+    { "source": "/services/winch-outs/", "destination": "/services/winch-outs", "permanent": true },
+    { "source": "/services/flatbed-towing/", "destination": "/services/flatbed-towing", "permanent": true },
+    { "source": "/services/stuck-in-garage-towing/", "destination": "/services/stuck-in-garage-towing", "permanent": true },
+    { "source": "/services/secondary-towing/", "destination": "/services/secondary-towing", "permanent": true },
+    { "source": "/services/unattended-towing/", "destination": "/services/unattended-towing", "permanent": true },
+    { "source": "/about/", "destination": "/about", "permanent": true },
+    { "source": "/services/", "destination": "/services", "permanent": true },
+    { "source": "/service-area/", "destination": "/service-area", "permanent": true },
+    { "source": "/reviews/", "destination": "/reviews", "permanent": true },
+    { "source": "/contact/", "destination": "/contact", "permanent": true },
+    { "source": "/blog/", "destination": "/blog", "permanent": true },
+    { "source": "/privacy-policy/", "destination": "/privacy-policy", "permanent": true },
+    { "source": "/terms-of-service/", "destination": "/terms-of-service", "permanent": true },
+    { "source": "/blog/what-to-do-when-your-car-breaks-down-dallas/", "destination": "/blog/what-to-do-when-your-car-breaks-down-dallas", "permanent": true },
+    { "source": "/blog/flatbed-vs-wheel-lift-towing-dallas/", "destination": "/blog/flatbed-vs-wheel-lift-towing-dallas", "permanent": true },
+    { "source": "/blog/how-to-choose-towing-company-dallas/", "destination": "/blog/how-to-choose-towing-company-dallas", "permanent": true },
+    { "source": "/blog/dead-battery-dallas-what-to-do/", "destination": "/blog/dead-battery-dallas-what-to-do", "permanent": true },
+    { "source": "/blog/towing-rights-texas-what-you-need-to-know/", "destination": "/blog/towing-rights-texas-what-you-need-to-know", "permanent": true },
+    { "source": "/blog/towing-discount-military-teachers-first-responders-dallas/", "destination": "/blog/towing-discount-military-teachers-first-responders-dallas", "permanent": true }
+  ]
+}
