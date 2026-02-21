@@ -30,12 +30,12 @@ export default function AboutPage() {
           backgroundPosition: "center 40%",
         }}
       >
-        <div className="absolute inset-0 bg-[#0a2340]/78" />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,35,64,0.82) 0%, rgba(10,35,64,0.88) 100%)" }} />
         <div className="container-tx text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-4" style={{ textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}>
             About Texas Tows Inc.
           </h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 max-w-2xl mx-auto" style={{ textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}>
             Built on Reliability, Driven by Trust
           </p>
         </div>

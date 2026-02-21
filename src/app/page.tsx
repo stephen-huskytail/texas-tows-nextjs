@@ -55,7 +55,7 @@ export default function HomePage() {
   return (
     <>
       {/* ===== 1. HERO ===== */}
-      <section className="relative min-h-[88vh] flex items-center" aria-label="Hero section">
+      <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center" aria-label="Hero section">
         <div className="absolute inset-0 z-0">
           <Image
             src={PHOTOS.hero}
@@ -65,61 +65,67 @@ export default function HomePage() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a2340]/92 via-[#0a2340]/80 to-[#0a2340]/40" />
+          {/* Overlay matching original — strong left coverage, fades right */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/70 to-slate-900/40" />
         </div>
 
-        <div className="relative z-10 w-full">
-          <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-24">
-            <div className="max-w-xl lg:max-w-2xl">
-              {/* Rating badge */}
-              <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
-                <div className="flex gap-0.5">
-                  {[1,2,3,4,5].map((i) => (
-                    <Star key={i} size={14} className="text-[#fef15f] fill-[#fef15f]" />
-                  ))}
-                </div>
-                <span className="text-white text-sm font-medium">
-                  {BUSINESS.rating} Stars · {BUSINESS.reviewCount} Google Reviews
-                </span>
+        <div className="container-tx relative z-10 py-20">
+          <div className="max-w-2xl">
+            {/* Rating badge */}
+            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
+              <div className="flex gap-0.5">
+                {[1,2,3,4,5].map((i) => (
+                  <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />
+                ))}
               </div>
+              <span className="text-white text-sm font-medium">
+                {BUSINESS.rating} Stars · {BUSINESS.reviewCount} Google Reviews
+              </span>
+            </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold text-white leading-[1.05] mb-6">
-                Dallas&apos;s Best-Rated<br />
-                <span className="text-[#fef15f]">Towing Service</span><br />
-                <span className="text-3xl md:text-4xl lg:text-5xl font-bold">— Available 24/7</span>
-              </h1>
+            {/* H1 — matches original sizing exactly */}
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5"
+              style={{ fontFamily: "Poppins, sans-serif", textShadow: "0 2px 16px rgba(0,0,0,0.5)" }}
+            >
+              Dallas&apos;s Best-Rated Towing Service<br />
+              <span style={{ color: "#fef15f" }}>— Available 24/7</span>
+            </h1>
 
-              <p className="text-lg md:text-xl text-white/85 mb-10 leading-relaxed max-w-lg">
-                Your search for a reliable towing company is over. Fast response, transparent pricing, and a team that treats your vehicle like our own.
-              </p>
+            <p className="text-lg md:text-xl text-white/85 mb-8 leading-relaxed">
+              Your search for a reliable towing company is over. Fast response, transparent pricing, and a team that treats your vehicle like our own.
+            </p>
 
-              {/* CTAs — side by side on desktop */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
-                <a
-                  href={BUSINESS.phoneHref}
-                  className="inline-flex items-center gap-3 rounded-2xl px-6 py-4 text-[#0a2340] font-bold shadow-2xl transition-all hover:scale-[1.02] active:scale-100"
-                  style={{
-                    background: "linear-gradient(135deg, #fef15f 0%, #f5c800 100%)",
-                    boxShadow: "0 0 0 4px rgba(254,241,95,0.35), 0 12px 40px rgba(0,0,0,0.45)",
-                  }}
-                  aria-label="Emergency Towing — Call Texas Tows Inc. now"
-                >
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0a2340] flex-shrink-0">
-                    <Phone className="w-5 h-5 text-[#fef15f]" />
-                  </span>
-                  <span>
-                    <span className="block text-xs font-bold uppercase tracking-wider text-[#0a2340]/70 leading-none mb-0.5">Emergency Towing — 24/7</span>
-                    <span className="block text-xl font-heading font-extrabold leading-tight">{BUSINESS.phone}</span>
-                  </span>
-                </a>
+            {/* Phone CTA — full width pill, stacked above quote button */}
+            <a
+              href={BUSINESS.phoneHref}
+              className="flex items-center gap-3 mb-6 rounded-2xl px-5 py-4 text-slate-900 font-bold shadow-2xl transition-all hover:scale-[1.02] active:scale-100 w-full max-w-sm"
+              style={{
+                background: "linear-gradient(135deg, #fef15f 0%, #f5c800 100%)",
+                fontFamily: "Poppins, sans-serif",
+                boxShadow: "0 0 0 4px rgba(254,241,95,0.4), 0 12px 40px rgba(0,0,0,0.45)",
+              }}
+              aria-label="Emergency Towing — Call Texas Tows Inc. now"
+            >
+              <span className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-900 flex-shrink-0">
+                <Phone className="w-5 h-5 text-yellow-300" />
+              </span>
+              <span className="flex-1 min-w-0">
+                <span className="block text-xs font-bold uppercase tracking-wider text-slate-600 leading-none mb-1">Emergency Towing — 24/7</span>
+                <span className="block text-lg sm:text-xl font-extrabold leading-tight">{BUSINESS.phone}</span>
+              </span>
+              <span className="flex-shrink-0 text-xs font-black bg-slate-900 text-yellow-300 rounded-full px-2.5 py-1.5 uppercase tracking-widest hidden sm:inline">24/7</span>
+            </a>
 
-                <HomeHeroQuote />
-              </div>
+            {/* Quote button — below phone CTA */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <HomeHeroQuote />
+            </div>
 
-              <div className="flex items-center gap-2 text-white/65 text-sm">
-                <MapPin className="w-4 h-4 text-blue-300 flex-shrink-0" />
-                <span>Serving Dallas &amp; Surrounding Areas · {BUSINESS.hours}</span>
-              </div>
+            {/* Serving line — white/70 with text shadow so it reads against any background */}
+            <div className="flex items-center gap-2 mt-6 text-sm font-semibold" style={{ color: "rgba(255,255,255,0.85)", textShadow: "0 1px 8px rgba(0,0,0,0.7)" }}>
+              <MapPin className="w-4 h-4 text-blue-300 flex-shrink-0" />
+              <span>Serving Dallas &amp; Surrounding Areas · {BUSINESS.hours}</span>
             </div>
           </div>
         </div>
