@@ -74,7 +74,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 flex-shrink-0">
               <Image
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/YsJDNiJcEXOIFtqz.png"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/vvORBwXUFKXegenK.png"
                 alt="Texas Tows Inc. Logo"
                 width={48}
                 height={48}
