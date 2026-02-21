@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, ArrowLeft, Phone, ExternalLink } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, getCurrentPromo } from "@/lib/constants";
 
 interface BlogPostLayoutProps {
   title: string;
@@ -30,12 +30,18 @@ export default function BlogPostLayout({
     day: "numeric",
   });
 
+  const promo = getCurrentPromo();
+
   return (
     <>
-      {/* Hero */}
-      <section className="bg-[#0a2340] pt-24 pb-12 md:pt-32 md:pb-16">
+      {/* Hero — dark header with reduced padding to avoid excessive gap */}
+      <section
+        className="bg-[#0a2340] pb-10 md:pb-14"
+        style={{ paddingTop: "clamp(1.5rem, 4vw, 2.5rem)" }}
+      >
         <div className="container-tx">
           <div className="max-w-3xl">
+            {/* Breadcrumb */}
             <div className="text-sm text-white/60 mb-3">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               {" / "}
@@ -65,9 +71,9 @@ export default function BlogPostLayout({
         </div>
       </section>
 
-      {/* Featured Image */}
+      {/* Featured Image — no grey placeholder; only renders when image is present */}
       {featuredImage && (
-        <div className="w-full h-64 md:h-96 relative overflow-hidden bg-gray-200">
+        <div className="w-full relative overflow-hidden" style={{ height: "clamp(220px, 35vw, 420px)" }}>
           <Image
             src={featuredImage}
             alt={featuredImageAlt || title}
@@ -84,7 +90,7 @@ export default function BlogPostLayout({
         <div className="container-tx">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
-            {/* Main Content — custom prose styles without relying on the plugin */}
+            {/* Main Content */}
             <article className="lg:col-span-2 blog-prose">
               {children}
             </article>
@@ -106,13 +112,11 @@ export default function BlogPostLayout({
                 </a>
               </div>
 
-              {/* Discount reminder */}
+              {/* Monthly promo reminder — auto-rotates */}
               <div className="rounded-xl p-5 bg-blue-50 border border-blue-100">
                 <div className="text-2xl mb-2">🎖️</div>
-                <h4 className="font-heading font-bold text-[#0a2340] mb-1 text-sm">15% Off for Heroes</h4>
-                <p className="text-gray-600 text-sm">
-                  Military, veterans, teachers, and first responders receive 15% off all services. Just mention it when you call.
-                </p>
+                <h4 className="font-heading font-bold text-[#0a2340] mb-1 text-sm">{promo.shortLabel}</h4>
+                <p className="text-gray-600 text-sm">{promo.description}</p>
               </div>
 
               {/* Leave a Review */}

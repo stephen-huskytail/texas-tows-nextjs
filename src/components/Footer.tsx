@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Star } from "lucide-react";
-import { BUSINESS, SERVICES, AREA_PAGES } from "@/lib/constants";
+import { BUSINESS, SERVICES, AREA_PAGES, getCurrentPromo } from "@/lib/constants";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const primaryAreas = AREA_PAGES.filter((a) => a.primary);
+  const promo = getCurrentPromo();
 
   return (
     <footer className="bg-[#0a2340] text-white">
@@ -143,11 +144,13 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Discount Banner */}
+      {/* Discount Banner — auto-rotates monthly */}
       <div className="bg-[#045cb4] py-4">
         <div className="container-tx text-center">
           <p className="text-sm text-white">
-            <span className="font-bold text-[#fef15f]">15% Discount</span> for Military, Teachers &amp; First Responders — Ask when you call!
+            <span className="font-bold text-[#fef15f]">{promo.shortLabel}</span>
+            {" — "}
+            {promo.description}
           </p>
         </div>
       </div>

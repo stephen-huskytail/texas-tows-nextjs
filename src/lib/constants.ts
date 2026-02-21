@@ -310,3 +310,38 @@ export const SERVICE_AREAS = {
     "Perry Heights",
   ],
 };
+
+// ─── Monthly Rotating Promo ───────────────────────────────────────────────────
+// Cycles automatically by month — no manual updates needed.
+// Military: Jan/Apr/Jul/Oct  |  Teachers: Feb/May/Aug/Nov  |  First Responders: Mar/Jun/Sep/Dec
+export const MONTHLY_PROMOS = [
+  {
+    group: "Military",
+    label: "15% Military Discount — Active Duty, Veterans & Families",
+    shortLabel: "15% Military Discount",
+    description:
+      "Active duty service members, veterans, and military families receive 15% off all services. Just mention your status when you call.",
+    months: [0, 3, 6, 9],
+  },
+  {
+    group: "Teachers",
+    label: "15% Teacher Discount — All K-12 & College Educators",
+    shortLabel: "15% Teacher Discount",
+    description:
+      "All K-12 and college educators receive 15% off all services. Just mention your status when you call.",
+    months: [1, 4, 7, 10],
+  },
+  {
+    group: "First Responders",
+    label: "15% First Responder Discount — Police, Fire & EMS",
+    shortLabel: "15% First Responder Discount",
+    description:
+      "Police officers, firefighters, and EMS personnel receive 15% off all services. Just mention your status when you call.",
+    months: [2, 5, 8, 11],
+  },
+];
+
+export function getCurrentPromo() {
+  const month = new Date().getMonth();
+  return MONTHLY_PROMOS.find((p) => p.months.includes(month)) ?? MONTHLY_PROMOS[0];
+}

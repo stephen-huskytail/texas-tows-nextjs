@@ -1,36 +1,18 @@
 "use client";
 
 import { Shield, Clock, Star, Award, Phone, GraduationCap, HeartHandshake } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, getCurrentPromo } from "@/lib/constants";
 
-// Promos rotate automatically by month — no manual updates needed.
-// Month index 0 = January. Cycle: Military (Jan, Apr, Jul, Oct) → Teachers (Feb, May, Aug, Nov) → First Responders (Mar, Jun, Sep, Dec)
-const MONTHLY_PROMOS = [
-  {
-    icon: Award,
-    label: "15% Military Discount — Active Duty, Veterans & Families",
-    months: [0, 3, 6, 9], // Jan, Apr, Jul, Oct
-  },
-  {
-    icon: GraduationCap,
-    label: "15% Teacher Discount — All K-12 & College Educators",
-    months: [1, 4, 7, 10], // Feb, May, Aug, Nov
-  },
-  {
-    icon: HeartHandshake,
-    label: "15% First Responder Discount — Police, Fire & EMS",
-    months: [2, 5, 8, 11], // Mar, Jun, Sep, Dec
-  },
-];
-
-function getCurrentPromo() {
-  const month = new Date().getMonth(); // 0–11
-  return MONTHLY_PROMOS.find((p) => p.months.includes(month)) ?? MONTHLY_PROMOS[0];
-}
+// Icon map — keyed by promo group name so TrustBar can render the right icon
+const PROMO_ICONS: Record<string, React.ElementType> = {
+  Military: Award,
+  Teachers: GraduationCap,
+  "First Responders": HeartHandshake,
+};
 
 export default function TrustBar() {
   const promo = getCurrentPromo();
-  const PromoIcon = promo.icon;
+  const PromoIcon = PROMO_ICONS[promo.group] ?? Award;
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[60] bg-[#0a2340] border-b border-white/10">
@@ -48,7 +30,7 @@ export default function TrustBar() {
             <Shield size={13} className="text-[#fef15f]" />
             <span>Licensed &amp; Insured · TDLR #{BUSINESS.tdlr}</span>
           </div>
-          {/* Monthly rotating promo */}
+          {/* Monthly rotating promo — source of truth: lib/constants.ts getCurrentPromo() */}
           <div className="flex items-center gap-1.5 text-[#fef15f] font-semibold">
             <PromoIcon size={13} className="flex-shrink-0" />
             <span>{promo.label} — Ask when you call!</span>
