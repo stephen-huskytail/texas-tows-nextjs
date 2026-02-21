@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Texas Tows Inc. | 24/7 Dallas Towing Service",
   description:
-    "Contact Texas Tows Inc. for 24/7 towing and roadside assistance in Dallas, TX. Call (214) 704-6474 or send us a message. Fast response, upfront pricing.",
+    "Contact Texas Tows Inc. for 24/7 towing and roadside assistance in Dallas, TX. Call (817) 512-1024 or send us a message. Fast response, upfront pricing.",
   alternates: { canonical: "https://texastows.com/contact" },
 };
 

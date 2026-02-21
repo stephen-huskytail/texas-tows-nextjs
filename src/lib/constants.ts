@@ -4,9 +4,9 @@
 export const BUSINESS = {
   name: "Texas Tows Inc.",
   fullName: "Texas Tows Inc. — Dallas Towing Service",
-  phone: "(214) 704-6474",
-  phoneTel: "+12147046474",
-  phoneHref: "tel:+12147046474",
+  phone: "(817) 512-1024",
+  phoneTel: "+18175121024",
+  phoneHref: "tel:+18175121024",
   email: "info@texastows.com",
   address: {
     street: "4245 N Central Expy #490",

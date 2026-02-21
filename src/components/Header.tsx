@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import {
   Phone, Menu, X, ChevronDown,
   Truck, Wrench, Car, Trash2, AlertTriangle, Anchor, Layers, Home,
-  RefreshCw, ParkingCircle, MapPin,
+  RefreshCw, ParkingCircle, MapPin, Info, Star, BookOpen, Mail,
 } from "lucide-react";
 import { BUSINESS, SERVICES, AREA_PAGES } from "@/lib/constants";
 import QuoteModal from "./QuoteModal";
@@ -90,11 +90,15 @@ export default function Header() {
               </div>
             </Link>
 
-            {/* Desktop Nav — clean, no icons on links */}
+            {/* Desktop Nav — with icons matching original */}
             <nav className="hidden lg:flex items-center gap-0.5">
 
-              <Link href="/" className={navLinkClass(pathname === "/")}>Home</Link>
-              <Link href="/about" className={navLinkClass(pathname === "/about")}>About</Link>
+              <Link href="/" className={`${navLinkClass(pathname === "/")} flex items-center gap-1.5`}>
+                <Home size={14} className="flex-shrink-0" />Home
+              </Link>
+              <Link href="/about" className={`${navLinkClass(pathname === "/about")} flex items-center gap-1.5`}>
+                <Info size={14} className="flex-shrink-0" />About
+              </Link>
 
               {/* Services Dropdown */}
               <div ref={servicesRef} className="relative">
@@ -187,18 +191,19 @@ export default function Header() {
                 )}
               </div>
 
-              <Link href="/reviews" className={navLinkClass(pathname === "/reviews")}>Reviews</Link>
-              <Link href="/contact" className={navLinkClass(pathname === "/contact")}>Contact</Link>
+              <Link href="/reviews" className={`${navLinkClass(pathname === "/reviews")} flex items-center gap-1.5`}>
+                <Star size={14} className="flex-shrink-0" />Reviews
+              </Link>
+              <Link href="/blog" className={`${navLinkClass(pathname.startsWith("/blog"))} flex items-center gap-1.5`}>
+                <BookOpen size={14} className="flex-shrink-0" />Blog
+              </Link>
+              <Link href="/contact" className={`${navLinkClass(pathname === "/contact")} flex items-center gap-1.5`}>
+                <Mail size={14} className="flex-shrink-0" />Contact
+              </Link>
             </nav>
 
-            {/* Desktop CTA */}
+            {/* Desktop CTA — phone button only, no Free Quote */}
             <div className="hidden lg:flex items-center gap-3">
-              <button
-                onClick={() => setQuoteOpen(true)}
-                className="text-sm font-semibold text-[#045cb4] hover:underline whitespace-nowrap"
-              >
-                Free Quote
-              </button>
               <a
                 href={BUSINESS.phoneHref}
                 className="flex items-center gap-2 bg-[#045cb4] text-white px-4 py-2.5 rounded-lg font-heading font-semibold text-sm hover:bg-[#0a2340] transition-colors shadow-md whitespace-nowrap"

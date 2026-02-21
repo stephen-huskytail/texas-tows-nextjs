@@ -26,11 +26,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://texastows.com"),
   title: {
-    default: "Texas Tows Inc. | 24/7 Towing Service Dallas, TX | (214) 704-6474",
+    default: "Texas Tows Inc. | 24/7 Towing Service Dallas, TX | (817) 512-1024",
     template: "%s | Texas Tows Inc. — Dallas Towing",
   },
   description:
-    "Texas Tows Inc. provides fast, reliable 24/7 towing and roadside assistance in Dallas, TX. Licensed, insured, TDLR certified. Call (214) 704-6474 for immediate help.",
+    "Texas Tows Inc. provides fast, reliable 24/7 towing and roadside assistance in Dallas, TX. Licensed, insured, TDLR certified. Call (817) 512-1024 for immediate help.",
   keywords: [
     "towing service Dallas TX",
     "24/7 towing Dallas",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Texas Tows Inc.",
     title: "Texas Tows Inc. | 24/7 Towing Service Dallas, TX",
     description:
-      "Fast, reliable 24/7 towing and roadside assistance in Dallas, TX. Licensed, insured, TDLR certified. Call (214) 704-6474.",
+      "Fast, reliable 24/7 towing and roadside assistance in Dallas, TX. Licensed, insured, TDLR certified. Call (817) 512-1024.",
     images: [
       {
         url: PHOTOS.logo,
