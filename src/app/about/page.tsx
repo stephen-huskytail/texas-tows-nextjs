@@ -28,15 +28,19 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative py-24 md:py-36 overflow-hidden"
-        style={{
-          backgroundImage: `url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/OmaTMlkCoUloWpoE.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center 40%",
-        }}
-      >
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,35,64,0.82) 0%, rgba(10,35,64,0.88) 100%)" }} />
+      <section className="relative py-24 md:py-36 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/OmaTMlkCoUloWpoE.webp"
+            alt="Texas Tows Inc. about us hero — tow truck in Dallas, TX"
+            fill
+            className="object-cover object-[center_40%]"
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(10,35,64,0.82) 0%, rgba(10,35,64,0.88) 100%)" }} />
+        </div>
         <div className="container-tx text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-4" style={{ textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}>
             About Texas Tows Inc.

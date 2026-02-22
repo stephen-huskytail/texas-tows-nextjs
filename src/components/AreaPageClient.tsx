@@ -49,7 +49,7 @@ export default function AreaPageClient({
       {/* Hero */}
       <section className="relative py-24 md:py-36 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src={heroImage} alt={heroImageAlt} fill className="object-cover" priority sizes="100vw" />
+          <Image src={heroImage} alt={heroImageAlt} fill className="object-cover" priority fetchPriority="high" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a2340]/90 via-[#0a2340]/75 to-[#0a2340]/40" />
         </div>
         <div className="container-tx relative z-10">

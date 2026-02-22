@@ -118,6 +118,7 @@ export default function BlogPostLayout({
             fill
             className="object-cover"
             priority
+            fetchPriority="high"
             sizes="100vw"
           />
         </div>

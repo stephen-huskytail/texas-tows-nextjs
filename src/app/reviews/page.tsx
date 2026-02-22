@@ -43,15 +43,19 @@ export default function ReviewsPage() {
       />
 
       {/* Hero */}
-      <section
-        className="relative py-24 md:py-36 overflow-hidden"
-        style={{
-          backgroundImage: `url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/LLUaWDdXkLJuLUNt.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center 45%",
-        }}
-      >
-        <div className="absolute inset-0 bg-[#0a2340]/80" />
+      <section className="relative py-24 md:py-36 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/LLUaWDdXkLJuLUNt.webp"
+            alt="Texas Tows Inc. reviews hero — customer testimonials"
+            fill
+            className="object-cover object-[center_45%]"
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-[#0a2340]/80" />
+        </div>
         <div className="container-tx text-center relative z-10">
           <div className="flex justify-center gap-1 mb-5">
             {[1,2,3,4,5].map(i => (

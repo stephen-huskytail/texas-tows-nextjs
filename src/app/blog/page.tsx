@@ -78,15 +78,19 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative py-24 md:py-36 overflow-hidden"
-        style={{
-          backgroundImage: `url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/tMroEVnOTPAzSpad.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center 40%",
-        }}
-      >
-        <div className="absolute inset-0 bg-[#0a2340]/80" />
+      <section className="relative py-24 md:py-36 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/tMroEVnOTPAzSpad.webp"
+            alt="Texas Tows Inc. blog hero — towing tips and advice"
+            fill
+            className="object-cover object-[center_40%]"
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-[#0a2340]/80" />
+        </div>
         <div className="container-tx text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-4">
             Towing Tips &amp; Roadside Advice

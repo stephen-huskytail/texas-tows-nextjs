@@ -83,6 +83,7 @@ export default function Header() {
                 height={48}
                 className="w-11 h-11 object-contain"
                 priority
+                fetchPriority="high"
               />
               <div className="hidden sm:block">
                 <div className="font-heading font-bold text-[#045cb4] text-lg leading-tight">Texas Tows Inc.</div>

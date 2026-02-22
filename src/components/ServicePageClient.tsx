@@ -53,6 +53,7 @@ export default function ServicePageClient({
             fill
             className="object-cover"
             priority
+            fetchPriority="high"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a2340]/90 via-[#0a2340]/75 to-[#0a2340]/50" />

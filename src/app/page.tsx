@@ -63,6 +63,7 @@ export default function HomePage() {
             fill
             className="object-cover"
             priority
+            fetchPriority="high"
             sizes="100vw"
           />
           {/* Overlay matching original — strong left coverage, fades right */}
