@@ -418,6 +418,78 @@ export default function HomePage() {
           }),
         }}
       />
+
+      {/* Organization Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": `${BUSINESS.siteUrl}/#organization`,
+            name: BUSINESS.name,
+            url: BUSINESS.siteUrl,
+            logo: {
+              "@type": "ImageObject",
+              url: PHOTOS.logo,
+            },
+            description:
+              "Texas Tows Inc. provides 24/7 emergency towing, roadside assistance, flatbed towing, and vehicle recovery services throughout Dallas, TX.",
+            telephone: BUSINESS.phoneTel,
+            email: BUSINESS.email,
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: BUSINESS.address.street,
+              addressLocality: BUSINESS.address.city,
+              addressRegion: BUSINESS.address.state,
+              postalCode: BUSINESS.address.zip,
+              addressCountry: "US",
+            },
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: BUSINESS.phoneTel,
+              contactType: "customer service",
+              areaServed: "US",
+              availableLanguage: ["English", "Spanish"],
+            },
+            sameAs: [
+              BUSINESS.social.facebook,
+              BUSINESS.social.instagram,
+              BUSINESS.social.youtube,
+              BUSINESS.social.tiktok,
+            ],
+            foundingDate: BUSINESS.founded,
+            areaServed: {
+              "@type": "City",
+              name: "Dallas",
+              sameAs: "https://en.wikipedia.org/wiki/Dallas",
+            },
+          }),
+        }}
+      />
+
+      {/* WebSite Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": `${BUSINESS.siteUrl}/#website`,
+            name: BUSINESS.name,
+            url: BUSINESS.siteUrl,
+            publisher: {
+              "@type": "Organization",
+              "@id": `${BUSINESS.siteUrl}/#organization`,
+            },
+            potentialAction: {
+              "@type": "SearchAction",
+              target: `${BUSINESS.siteUrl}/?s={search_term_string}`,
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
     </>
   );
 }
