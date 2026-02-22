@@ -72,12 +72,27 @@ export default function BlogPostLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
       />
 
-      {/* Hero — dark header with reduced padding to avoid excessive gap */}
-      <section
-        className="bg-[#0a2340] pb-10 md:pb-14"
-        style={{ paddingTop: "clamp(1.5rem, 4vw, 2.5rem)" }}
-      >
-        <div className="container-tx">
+      {/* Hero — featured image as background with dark overlay */}
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        {/* Background: featured image or solid fallback */}
+        {featuredImage ? (
+          <div className="absolute inset-0 z-0">
+            <Image
+              src={featuredImage}
+              alt={featuredImageAlt || title}
+              fill
+              className="object-cover"
+              priority
+              fetchPriority="high"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a2340]/90 via-[#0a2340]/80 to-[#0a2340]/60" />
+          </div>
+        ) : (
+          <div className="absolute inset-0 z-0 bg-[#0a2340]" />
+        )}
+
+        <div className="container-tx relative z-10">
           <div className="max-w-3xl">
             {/* Breadcrumb */}
             <div className="text-sm text-white/60 mb-3">
@@ -90,11 +105,14 @@ export default function BlogPostLayout({
             <div className="inline-block bg-[#045cb4]/80 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
               {category}
             </div>
-            <h1 className="text-3xl md:text-4xl font-heading font-extrabold text-white mb-4 max-w-3xl leading-tight">
+            <h1
+              className="text-3xl md:text-4xl font-heading font-extrabold text-white mb-4 max-w-3xl leading-tight"
+              style={{ textShadow: "0 2px 12px rgba(0,0,0,0.5)" }}
+            >
               {title}
             </h1>
-            <p className="text-white/70 text-lg max-w-2xl mb-6">{description}</p>
-            <div className="flex items-center gap-4 text-sm text-white/50">
+            <p className="text-white/80 text-lg max-w-2xl mb-6">{description}</p>
+            <div className="flex items-center gap-4 text-sm text-white/60">
               <div className="flex items-center gap-1.5">
                 <Calendar className="w-4 h-4" />
                 <span>{formattedDate}</span>
@@ -108,21 +126,6 @@ export default function BlogPostLayout({
           </div>
         </div>
       </section>
-
-      {/* Featured Image — no grey placeholder; only renders when image is present */}
-      {featuredImage && (
-        <div className="w-full relative overflow-hidden" style={{ height: "clamp(220px, 35vw, 420px)" }}>
-          <Image
-            src={featuredImage}
-            alt={featuredImageAlt || title}
-            fill
-            className="object-cover"
-            priority
-            fetchPriority="high"
-            sizes="100vw"
-          />
-        </div>
-      )}
 
       {/* Content + Sidebar */}
       <section className="bg-white py-12 md:py-16">
