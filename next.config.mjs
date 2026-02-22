@@ -4,11 +4,6 @@ const nextConfig = {
   trailingSlash: false,
   // Compress responses
   compress: true,
-  // Performance: inline critical CSS to eliminate render-blocking stylesheet
-  experimental: {
-    optimizeCss: true,
-    inlineCss: true,
-  },
   // Image optimization: allow CDN domain
   images: {
     remotePatterns: [
