@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Towing Service in Dallas, TX",
+  description: "Fast, reliable 24/7 towing service in Dallas. Texas Tows Inc. provides professional towing for all vehicle types with transparent pricing.",
   serviceType: "Towing Service",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

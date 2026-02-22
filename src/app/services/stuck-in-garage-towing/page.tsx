@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Stuck in Garage Towing in Dallas, TX",
+  description: "Specialized towing for vehicles stuck in garages, tight spaces, and underground parking in Dallas. Texas Tows Inc. available 24/7.",
   serviceType: "Stuck in Garage Towing",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

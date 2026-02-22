@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Vehicle Transport in Dallas, TX",
+  description: "Safe, professional vehicle transport in Dallas for classic cars, luxury vehicles, and long-distance moves. Texas Tows Inc. available 24/7.",
   serviceType: "Vehicle Transport",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

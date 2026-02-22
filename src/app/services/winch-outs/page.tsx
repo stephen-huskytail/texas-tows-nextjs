@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Winch Out & Vehicle Recovery in Dallas, TX",
+  description: "Professional winch out and vehicle recovery service in Dallas. Texas Tows Inc. rescues stuck, off-road, and ditched vehicles 24/7.",
   serviceType: "Winch Out & Vehicle Recovery",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

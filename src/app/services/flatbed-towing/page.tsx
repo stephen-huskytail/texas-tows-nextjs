@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Flatbed Towing in Dallas, TX",
+  description: "Safe flatbed towing in Dallas for luxury, low-clearance, and AWD vehicles. Zero wheel contact, 24/7 availability from Texas Tows Inc.",
   serviceType: "Flatbed Towing",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

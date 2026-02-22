@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Junk Car Removal in Dallas, TX",
+  description: "Free junk car removal and tow-away service in Dallas. Texas Tows Inc. removes junk, salvage, and non-running vehicles at no cost.",
   serviceType: "Junk Car Removal",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

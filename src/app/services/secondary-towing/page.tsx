@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Secondary Towing in Dallas, TX",
+  description: "Reliable secondary towing and vehicle relocation in Dallas. Texas Tows Inc. moves your vehicle after an initial tow to a repair shop, storage, or home.",
   serviceType: "Secondary Towing",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

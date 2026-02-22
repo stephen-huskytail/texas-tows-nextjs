@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Accident Recovery Towing in Dallas, TX",
+  description: "24/7 emergency accident recovery towing in Dallas. Texas Tows Inc. provides fast, professional accident scene towing and vehicle recovery.",
   serviceType: "Accident Recovery Towing",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

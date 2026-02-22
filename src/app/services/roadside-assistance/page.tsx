@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Roadside Assistance in Dallas, TX",
+  description: "24/7 roadside assistance in Dallas including jumpstarts, tire changes, fuel delivery, and lockout service from Texas Tows Inc.",
   serviceType: "Roadside Assistance",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },

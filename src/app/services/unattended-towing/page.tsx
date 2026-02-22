@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  name: "Unattended Towing in Dallas, TX",
+  description: "Professional unattended and private property towing in Dallas. Texas Tows Inc. provides vehicle removal for property managers and private lots.",
   serviceType: "Unattended Towing",
   provider: { "@type": "AutomotiveBusiness", name: "Texas Tows Inc.", telephone: BUSINESS.phoneTel },
   areaServed: { "@type": "City", name: "Dallas" },
