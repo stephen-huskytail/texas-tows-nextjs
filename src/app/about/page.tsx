@@ -7,7 +7,7 @@ import { BUSINESS, PHOTOS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "About Texas Tows | Dallas Towing Co.",
   description:
-    "Learn about Texas Tows Inc. — Dallas's trusted towing company since 2015. Licensed, insured, TDLR certified. Meet our team and discover our commitment to honest, professional service.",
+    "Texas Tows Inc. — Dallas’s trusted towing company since 2015. Licensed, insured, TDLR certified. Meet our team and our commitment to honest service.",
   alternates: { canonical: "https://www.texastows.com/about" },
 };
 

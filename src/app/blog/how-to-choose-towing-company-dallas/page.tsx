@@ -4,7 +4,7 @@ import BlogPostLayout from "@/components/BlogPostLayout";
 
 export const metadata: Metadata = {
   title: "How to Choose a Towing Company in Dallas",
-  description: "There are dozens of towing companies in Dallas — and not all of them play fair. Here are the questions to ask and the red flags to watch for before you hand over your keys.",
+  description: "Dozens of towing companies in Dallas, but not all play fair. Questions to ask and red flags to watch before you hand over your keys.",
   alternates: { canonical: "https://www.texastows.com/blog/how-to-choose-towing-company-dallas" },
 };
 

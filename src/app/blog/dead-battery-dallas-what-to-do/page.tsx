@@ -4,7 +4,7 @@ import BlogPostLayout from "@/components/BlogPostLayout";
 
 export const metadata: Metadata = {
   title: "Dead Battery in Dallas? Here's What to Do",
-  description: "A dead battery is one of the most common roadside emergencies in Dallas. Here's how to handle it safely — including when a jump start is enough and when you need a full replacement.",
+  description: "Dead battery in Dallas? Learn how to handle it safely — when a jump start works, when you need a replacement, and how to get roadside help fast.",
   alternates: { canonical: "https://www.texastows.com/blog/dead-battery-dallas-what-to-do" },
 };
 

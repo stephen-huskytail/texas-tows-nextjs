@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Texas Tows",
   },
   description:
-    "Texas Tows Inc. provides fast, reliable 24/7 towing and roadside assistance in Dallas, TX. Licensed, insured, TDLR certified. Call (817) 512-1024 for immediate help.",
+    "Texas Tows Inc. provides fast, reliable 24/7 towing and roadside assistance in Dallas, TX. Licensed, insured, TDLR certified. Call now.",
   keywords: [
     "towing service Dallas TX",
     "24/7 towing Dallas",

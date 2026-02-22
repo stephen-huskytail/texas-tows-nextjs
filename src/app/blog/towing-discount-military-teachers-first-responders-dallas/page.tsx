@@ -4,7 +4,7 @@ import BlogPostLayout from "@/components/BlogPostLayout";
 
 export const metadata: Metadata = {
   title: "15% Off Towing: Military & First Responders",
-  description: "Texas Tows Inc. offers 15% off all towing and roadside assistance for active military, veterans, teachers, and first responders in Dallas, TX. Call (817) 512-1024.",
+  description: "Texas Tows Inc. offers 15% off towing and roadside assistance for military, veterans, teachers, and first responders in Dallas. Call now.",
   alternates: { canonical: "https://www.texastows.com/blog/towing-discount-military-teachers-first-responders-dallas" },
 };
 

@@ -8,7 +8,7 @@ import ServicesHeroQuote from "@/components/ServicesHeroQuote";
 export const metadata: Metadata = {
   title: "Towing & Roadside Services | Dallas TX",
   description:
-    "Texas Tows Inc. offers emergency towing, flatbed towing, roadside assistance, lockout service, fuel delivery, winch-out recovery, and junk car removal in Dallas, TX. Available 24/7.",
+    "Texas Tows Inc. offers emergency towing, flatbed towing, roadside assistance, lockout service, winch-out recovery, and more in Dallas. 24/7.",
   alternates: { canonical: "https://www.texastows.com/services" },
 };
 

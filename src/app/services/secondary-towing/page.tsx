@@ -4,7 +4,7 @@ import ServicePageClient from "@/components/ServicePageClient";
 
 export const metadata: Metadata = {
   title: "Secondary Towing Dallas TX | Relocation",
-  description: `Need secondary towing in Dallas? Texas Tows Inc. provides reliable vehicle relocation after an initial tow — to a repair shop, storage, or home. Call ${BUSINESS.phone}.`,
+  description: `Need secondary towing in Dallas? Texas Tows Inc. relocates your vehicle after an initial tow — to a repair shop, storage, or home. 24/7.`,
   alternates: { canonical: "https://www.texastows.com/services/secondary-towing" },
 };
 

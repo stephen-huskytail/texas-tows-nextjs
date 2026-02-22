@@ -4,7 +4,7 @@ import BlogPostLayout from "@/components/BlogPostLayout";
 
 export const metadata: Metadata = {
   title: "Flatbed vs. Wheel-Lift Towing Explained",
-  description: "Not all towing is the same. Understanding the difference between flatbed and wheel-lift towing could save your vehicle from unnecessary damage. Here's what every Dallas driver should know.",
+  description: "Flatbed vs. wheel-lift towing — what’s the difference and which one protects your vehicle? Here’s what every Dallas driver should know before calling.",
   alternates: { canonical: "https://www.texastows.com/blog/flatbed-vs-wheel-lift-towing-dallas" },
 };
 

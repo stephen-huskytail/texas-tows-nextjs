@@ -4,7 +4,7 @@ import ServicePageClient from "@/components/ServicePageClient";
 
 export const metadata: Metadata = {
   title: "Vehicle Transport Dallas TX | Car Hauling",
-  description: `Need a vehicle transported in Dallas? Texas Tows Inc. offers safe, professional vehicle transport for classic cars, luxury vehicles, and long-distance moves. Call ${BUSINESS.phone}.`,
+  description: `Vehicle transport in Dallas — Texas Tows Inc. offers safe, professional transport for classic cars, luxury vehicles, and long-distance moves.`,
   alternates: { canonical: "https://www.texastows.com/services/vehicle-transport" },
 };
 
