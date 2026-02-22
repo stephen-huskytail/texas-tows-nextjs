@@ -33,43 +33,6 @@ export default async function AreaPage({ params }: Props) {
   const area = getAreaData(slug);
   if (!area) notFound();
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `https://www.texastows.com/service-area/${slug}/`,
-    name: "Texas Tows Inc.",
-    description: `24/7 towing and roadside assistance serving ${area.name}, ${area.cityState}. Fast response, transparent pricing, certified drivers.`,
-    url: `https://www.texastows.com/service-area/${slug}/`,
-    telephone: BUSINESS.phoneTel,
-    priceRange: "$$",
-    image: area.heroImage,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: BUSINESS.address.street,
-      addressLocality: BUSINESS.address.city,
-      addressRegion: BUSINESS.address.state,
-      postalCode: BUSINESS.address.zip,
-      addressCountry: "US",
-    },
-    areaServed: { "@type": "Place", name: `${area.name}, ${area.cityState}` },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      opens: "00:00",
-      closes: "23:59",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: BUSINESS.rating,
-      reviewCount: BUSINESS.reviewCount,
-      bestRating: "5",
-    },
-    sameAs: [
-      "https://www.facebook.com/texastowsinc",
-      "https://www.instagram.com/texas_tows/",
-    ],
-  };
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -83,7 +46,6 @@ export default async function AreaPage({ params }: Props) {
   return (
     <AreaPageClient
       {...area}
-      schema={schema}
       faqSchema={faqSchema}
     />
   );

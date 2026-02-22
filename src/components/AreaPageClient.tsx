@@ -20,7 +20,6 @@ interface AreaPageClientProps {
   services: string[];
   faqs: { q: string; a: string }[];
   nearbyAreas: { name: string; slug: string }[];
-  schema: object;
   faqSchema: object;
 }
 
@@ -36,7 +35,6 @@ export default function AreaPageClient({
   services,
   faqs,
   nearbyAreas,
-  schema,
   faqSchema,
 }: AreaPageClientProps) {
   const [quoteOpen, setQuoteOpen] = useState(false);
@@ -44,7 +42,6 @@ export default function AreaPageClient({
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <QuoteModal isOpen={quoteOpen} onClose={() => setQuoteOpen(false)} />
