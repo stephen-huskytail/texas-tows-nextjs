@@ -66,7 +66,7 @@ export default function AreaPageClient({
               <span className="text-white text-sm font-medium">{name}, {cityState}</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-5 leading-tight">
-              Towing Service in<br />
+              Towing Service in{" "}<br />
               <span className="text-[#fef15f]">{name}</span>
             </h1>
             <p className="text-lg text-white/85 mb-8 leading-relaxed">{intro}</p>

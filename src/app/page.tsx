@@ -88,9 +88,9 @@ export default function HomePage() {
               className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5"
               style={{ fontFamily: "Poppins, sans-serif", textShadow: "0 2px 16px rgba(0,0,0,0.5)" }}
             >
-              Dallas&apos;s Best-Rated<br />
-              <span style={{ color: "#fef15f" }}>Towing Service</span><br />
-              — Available 24/7
+              Dallas&apos;s Best-Rated{" "}<br />
+              <span style={{ color: "#fef15f" }}>Towing Service</span>{" "}<br />
+              {" "}— Available 24/7
             </h1>
 
             <p className="text-lg md:text-xl text-white/85 mb-8 leading-relaxed">
