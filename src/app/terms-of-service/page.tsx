@@ -5,7 +5,7 @@ import { BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Terms of Service | Texas Tows Inc. Dallas TX",
   description: "Texas Tows Inc. terms of service — governing towing, roadside assistance, and vehicle transport services in Dallas, TX. TDLR-licensed and fully compliant.",
-  alternates: { canonical: "https://texastows.com/terms-of-service" },
+  alternates: { canonical: "https://www.texastows.com/terms-of-service" },
 };
 
 export default function TermsOfServicePage() {
@@ -41,7 +41,7 @@ export default function TermsOfServicePage() {
             </p>
             <h2>1. Agreement to Terms</h2>
             <p>
-              These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;Customer,&quot; &quot;you,&quot; or &quot;your&quot;) and <strong>Texas Tows Inc.</strong>, a Texas corporation with its principal place of business at {BUSINESS.address.full} (&quot;Texas Tows Inc.,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). These Terms govern your use of our towing, roadside assistance, vehicle transport, and related services (collectively, &quot;Services&quot;), as well as your use of our website at <strong>texastows.com</strong>.
+              These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;Customer,&quot; &quot;you,&quot; or &quot;your&quot;) and <strong>Texas Tows Inc.</strong>, a Texas corporation with its principal place of business at {BUSINESS.address.full} (&quot;Texas Tows Inc.,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). These Terms govern your use of our towing, roadside assistance, vehicle transport, and related services (collectively, &quot;Services&quot;), as well as your use of our website at <strong>www.texastows.com</strong>.
             </p>
             <p>
               By requesting our Services or using our website, you confirm that you are at least 18 years of age, have the legal authority to authorize service on the subject vehicle, and agree to these Terms in full.

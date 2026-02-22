@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Dallas Towing Service Areas | Texas Tows Inc.",
   description:
     "Texas Tows Inc. provides 24/7 towing and roadside assistance throughout Dallas, TX. See all neighborhoods and service areas we cover.",
-  alternates: { canonical: "https://texastows.com/service-area" },
+  alternates: { canonical: "https://www.texastows.com/service-area" },
 };
 
 // Neighborhood images — curated Unsplash photos for each Dallas area

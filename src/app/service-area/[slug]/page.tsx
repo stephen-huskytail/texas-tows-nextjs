@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: area.seoTitle,
     description: area.metaDescription,
-    alternates: { canonical: `https://texastows.com/service-area/${slug}` },
+    alternates: { canonical: `https://www.texastows.com/service-area/${slug}` },
     openGraph: {
       title: area.seoTitle,
       description: area.metaDescription,
@@ -36,10 +36,10 @@ export default async function AreaPage({ params }: Props) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": `https://texastows.com/service-area/${slug}/`,
+    "@id": `https://www.texastows.com/service-area/${slug}/`,
     name: "Texas Tows Inc.",
     description: `24/7 towing and roadside assistance serving ${area.name}, ${area.cityState}. Fast response, transparent pricing, certified drivers.`,
-    url: `https://texastows.com/service-area/${slug}/`,
+    url: `https://www.texastows.com/service-area/${slug}/`,
     telephone: BUSINESS.phoneTel,
     priceRange: "$$",
     image: area.heroImage,

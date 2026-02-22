@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://texastows.com/sitemap.xml",
-    host: "https://texastows.com",
+    sitemap: "https://www.texastows.com/sitemap.xml",
+    host: "https://www.texastows.com",
   };
 }

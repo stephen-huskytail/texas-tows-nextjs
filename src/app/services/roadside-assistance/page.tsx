@@ -5,7 +5,7 @@ import ServicePageClient from "@/components/ServicePageClient";
 export const metadata: Metadata = {
   title: "Roadside Assistance Dallas TX | Jumpstart, Tire Change, Lockout | Texas Tows",
   description: `Stranded in Dallas? Texas Tows Inc. provides 24/7 roadside assistance including jumpstarts, tire changes, fuel delivery, and lockout service. Call ${BUSINESS.phone}.`,
-  alternates: { canonical: "https://texastows.com/services/roadside-assistance" },
+  alternates: { canonical: "https://www.texastows.com/services/roadside-assistance" },
 };
 
 const schema = {

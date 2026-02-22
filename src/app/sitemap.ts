@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { AREA_DATA } from "@/lib/areaData";
 
-const BASE_URL = "https://texastows.com";
+const BASE_URL = "https://www.texastows.com";
 
 const servicePages = [
   "towing-service",

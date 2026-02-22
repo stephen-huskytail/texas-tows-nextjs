@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "About Texas Tows Inc. | Dallas Towing Company Since 2015",
   description:
     "Learn about Texas Tows Inc. — Dallas's trusted towing company since 2015. Licensed, insured, TDLR certified. Meet our team and discover our commitment to honest, professional service.",
-  alternates: { canonical: "https://texastows.com/about" },
+  alternates: { canonical: "https://www.texastows.com/about" },
 };
 
 const values = [

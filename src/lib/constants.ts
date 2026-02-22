@@ -32,7 +32,7 @@ export const BUSINESS = {
   googleReviewUrl: "https://g.page/r/CVfoRkTrDgAgEAE/review",
   googleReviewQr:
     "https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/CIqhhcbzZnScCnXB.png",
-  siteUrl: "https://texastows.com",
+  siteUrl: "https://www.texastows.com",
 };
 
 export const PHOTOS = {

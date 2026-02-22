@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Towing & Roadside Assistance Services in Dallas TX | Texas Tows Inc.",
   description:
     "Texas Tows Inc. offers emergency towing, flatbed towing, roadside assistance, lockout service, fuel delivery, winch-out recovery, and junk car removal in Dallas, TX. Available 24/7.",
-  alternates: { canonical: "https://texastows.com/services" },
+  alternates: { canonical: "https://www.texastows.com/services" },
 };
 
 export default function ServicesPage() {

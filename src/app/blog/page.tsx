@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Towing Tips & Advice Blog | Texas Tows Inc. Dallas TX",
   description:
     "Towing tips, roadside advice, and consumer guides from Texas Tows Inc. — Dallas's trusted 24/7 towing company. Know your rights, stay safe, and make smart decisions.",
-  alternates: { canonical: "https://texastows.com/blog" },
+  alternates: { canonical: "https://www.texastows.com/blog" },
 };
 
 const blogPosts = [

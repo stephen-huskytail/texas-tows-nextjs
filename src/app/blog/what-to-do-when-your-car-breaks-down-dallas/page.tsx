@@ -6,7 +6,7 @@ import BlogPostLayout from "@/components/BlogPostLayout";
 export const metadata: Metadata = {
   title: "What to Do When Your Car Breaks Down in Dallas | Texas Tows",
   description: "Breaking down on a Dallas highway is stressful. Here's a step-by-step guide to staying safe and getting help fast — from the moment your car stops to the moment you're back on the road.",
-  alternates: { canonical: "https://texastows.com/blog/what-to-do-when-your-car-breaks-down-dallas" },
+  alternates: { canonical: "https://www.texastows.com/blog/what-to-do-when-your-car-breaks-down-dallas" },
 };
 
 export default function WhatToDoCarBreaksDown() {

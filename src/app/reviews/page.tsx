@@ -6,7 +6,7 @@ import { BUSINESS, TESTIMONIALS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Customer Reviews — Texas Tows Inc. Dallas TX | 4.9 Stars",
   description: `${BUSINESS.rating} stars across ${BUSINESS.reviewCount}+ Google reviews. See what Dallas customers say about Texas Tows Inc. — 24/7 towing and roadside assistance.`,
-  alternates: { canonical: "https://texastows.com/reviews" },
+  alternates: { canonical: "https://www.texastows.com/reviews" },
 };
 
 const reviewSchema = {

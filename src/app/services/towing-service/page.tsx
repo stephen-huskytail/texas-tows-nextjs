@@ -5,7 +5,7 @@ import ServicePageClient from "@/components/ServicePageClient";
 export const metadata: Metadata = {
   title: "Towing Service Dallas TX | 24/7 Tow Truck | Texas Tows",
   description: `Need a tow in Dallas? Texas Tows Inc. provides 24/7 towing service with fast response times, transparent pricing, and professional drivers. Call ${BUSINESS.phone}.`,
-  alternates: { canonical: "https://texastows.com/services/towing-service" },
+  alternates: { canonical: "https://www.texastows.com/services/towing-service" },
 };
 
 const schema = {

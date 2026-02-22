@@ -5,7 +5,7 @@ import ServicePageClient from "@/components/ServicePageClient";
 export const metadata: Metadata = {
   title: "Unattended Towing Dallas TX | Private Property Towing | Texas Tows",
   description: `Need unattended or private property towing in Dallas? Texas Tows Inc. provides professional vehicle removal for property managers and private lots. Call ${BUSINESS.phone}.`,
-  alternates: { canonical: "https://texastows.com/services/unattended-towing" },
+  alternates: { canonical: "https://www.texastows.com/services/unattended-towing" },
 };
 
 const schema = {

@@ -5,7 +5,7 @@ import ServicePageClient from "@/components/ServicePageClient";
 export const metadata: Metadata = {
   title: "Accident Recovery Towing Dallas TX | 24/7 Emergency Scene Towing | Texas Tows",
   description: `Involved in an accident in Dallas? Texas Tows Inc. provides 24/7 accident recovery towing and emergency scene towing. Call ${BUSINESS.phone}.`,
-  alternates: { canonical: "https://texastows.com/services/accident-recovery" },
+  alternates: { canonical: "https://www.texastows.com/services/accident-recovery" },
 };
 
 const schema = {

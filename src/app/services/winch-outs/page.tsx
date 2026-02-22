@@ -5,7 +5,7 @@ import ServicePageClient from "@/components/ServicePageClient";
 export const metadata: Metadata = {
   title: "Winch Out Service Dallas TX | Off-Road Recovery | Texas Tows",
   description: `Vehicle stuck in a ditch or off-road in Dallas? Texas Tows Inc. provides professional winch out and vehicle recovery service 24/7. Call ${BUSINESS.phone}.`,
-  alternates: { canonical: "https://texastows.com/services/winch-outs" },
+  alternates: { canonical: "https://www.texastows.com/services/winch-outs" },
 };
 
 const schema = {

@@ -5,7 +5,7 @@ import ServicePageClient from "@/components/ServicePageClient";
 export const metadata: Metadata = {
   title: "Flatbed Towing Dallas TX | Luxury & AWD Vehicle Towing | Texas Tows",
   description: `Need flatbed towing in Dallas? Texas Tows Inc. provides safe flatbed towing for luxury, lowered, and AWD vehicles. Zero wheel contact. Call ${BUSINESS.phone}.`,
-  alternates: { canonical: "https://texastows.com/services/flatbed-towing" },
+  alternates: { canonical: "https://www.texastows.com/services/flatbed-towing" },
 };
 
 const schema = {

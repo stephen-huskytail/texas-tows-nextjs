@@ -5,7 +5,7 @@ import { BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Privacy Policy | Texas Tows Inc. Dallas TX",
   description: "Texas Tows Inc. privacy policy — how we collect, use, and protect your personal information. TDLR-licensed towing company serving Dallas, TX.",
-  alternates: { canonical: "https://texastows.com/privacy-policy" },
+  alternates: { canonical: "https://www.texastows.com/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

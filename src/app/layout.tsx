@@ -24,7 +24,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://texastows.com"),
+  metadataBase: new URL("https://www.texastows.com"),
   title: {
     default: "Texas Tows Inc. | 24/7 Towing Service Dallas, TX | (817) 512-1024",
     template: "%s | Texas Tows Inc. — Dallas Towing",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://texastows.com",
+    url: "https://www.texastows.com",
     siteName: "Texas Tows Inc.",
     title: "Texas Tows Inc. | 24/7 Towing Service Dallas, TX",
     description:
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://texastows.com",
+    canonical: "https://www.texastows.com",
   },
 };
 
@@ -97,7 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://texastows.com/#business",
+              "@id": "https://www.texastows.com/#business",
               name: BUSINESS.name,
               description:
                 "Texas Tows Inc. provides 24/7 emergency towing, roadside assistance, flatbed towing, and vehicle recovery services throughout Dallas, TX.",
