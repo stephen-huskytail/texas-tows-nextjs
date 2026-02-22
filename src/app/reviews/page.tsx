@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Phone, ExternalLink, Star } from "lucide-react";
-import { BUSINESS, TESTIMONIALS } from "@/lib/constants";
+import { BUSINESS, TESTIMONIALS, PHOTOS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Reviews | 4.9-Star Dallas Towing",
   description: `${BUSINESS.rating} stars across ${BUSINESS.reviewCount}+ Google reviews. See what Dallas customers say about Texas Tows Inc. — 24/7 towing and roadside assistance.`,
   alternates: { canonical: "https://www.texastows.com/reviews" },
+  openGraph: {
+    title: "Reviews | 4.9-Star Dallas Towing | Texas Tows",
+    description: `${BUSINESS.rating} stars across ${BUSINESS.reviewCount}+ Google reviews. See what Dallas customers say about Texas Tows Inc. — 24/7 towing and roadside assistance.`,
+    url: "https://www.texastows.com/reviews",
+    images: [{ url: PHOTOS.logo, alt: "Texas Tows Inc. — 4.9-star rated towing in Dallas" }],
+  },
 };
 
 const reviewSchema = {

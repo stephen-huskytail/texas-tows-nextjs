@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
-import { BUSINESS, getCurrentPromo } from "@/lib/constants";
+import { BUSINESS, getCurrentPromo, PHOTOS } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "Contact Texas Tows Inc. for 24/7 towing and roadside assistance in Dallas, TX. Call (817) 512-1024 or send us a message. Fast response, upfront pricing.",
   alternates: { canonical: "https://www.texastows.com/contact" },
+  openGraph: {
+    title: "Contact Us | 24/7 Dallas Towing | Texas Tows",
+    description: "Contact Texas Tows Inc. for 24/7 towing and roadside assistance in Dallas, TX. Call (817) 512-1024 or send us a message. Fast response, upfront pricing.",
+    url: "https://www.texastows.com/contact",
+    images: [{ url: PHOTOS.logo, alt: "Texas Tows Inc. — Contact us for 24/7 towing in Dallas" }],
+  },
 };
 
 const schema = {

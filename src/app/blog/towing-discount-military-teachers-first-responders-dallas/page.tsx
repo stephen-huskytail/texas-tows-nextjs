@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "15% Off Towing: Military & First Responders",
   description: "Texas Tows Inc. offers 15% off towing and roadside assistance for military, veterans, teachers, and first responders in Dallas. Call now.",
   alternates: { canonical: "https://www.texastows.com/blog/towing-discount-military-teachers-first-responders-dallas" },
+  openGraph: {
+    title: "15% Off Towing: Military & First Responders | Texas Tows",
+    description: "Texas Tows Inc. offers 15% off towing and roadside assistance for military, veterans, teachers, and first responders in Dallas. Call now.",
+    url: "https://www.texastows.com/blog/towing-discount-military-teachers-first-responders-dallas",
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/hiJwwoRYdhbxcrPB.webp", alt: "Texas Tows Inc. serving Dallas military and first responders" }],
+  },
 };
 
 export default function MilitaryDiscountTowing() {

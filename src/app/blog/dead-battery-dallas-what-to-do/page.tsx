@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Dead Battery in Dallas? Here's What to Do",
   description: "Dead battery in Dallas? Learn how to handle it safely — when a jump start works, when you need a replacement, and how to get roadside help fast.",
   alternates: { canonical: "https://www.texastows.com/blog/dead-battery-dallas-what-to-do" },
+  openGraph: {
+    title: "Dead Battery in Dallas? Here's What to Do | Texas Tows",
+    description: "Dead battery in Dallas? Learn how to handle it safely — when a jump start works, when you need a replacement, and how to get roadside help fast.",
+    url: "https://www.texastows.com/blog/dead-battery-dallas-what-to-do",
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/qwNQtjEWMqZdXYbM.webp", alt: "Dead car battery in Dallas — Texas Tows roadside assistance" }],
+  },
 };
 
 export default function DeadBatteryDallas() {

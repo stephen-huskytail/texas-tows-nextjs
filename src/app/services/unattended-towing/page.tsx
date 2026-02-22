@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Unattended Towing Dallas TX | Private Lot",
   description: `Unattended or private property towing in Dallas. Texas Tows Inc. provides professional vehicle removal for property managers and private lots.`,
   alternates: { canonical: "https://www.texastows.com/services/unattended-towing" },
+  openGraph: {
+    title: "Unattended Towing Dallas TX | Private Lot | Texas Tows",
+    description: "Unattended or private property towing in Dallas. Texas Tows Inc. provides professional vehicle removal for property managers and private lots.",
+    url: "https://www.texastows.com/services/unattended-towing",
+    images: [{ url: PHOTOS.truckService, alt: "Texas Tows Inc. unattended towing service in Dallas, TX" }],
+  },
 };
 
 const schema = {

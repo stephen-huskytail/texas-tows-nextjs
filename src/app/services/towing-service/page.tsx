@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Towing Service Dallas TX | 24/7 Tow Truck",
   description: `Need a tow in Dallas? Texas Tows Inc. provides 24/7 towing service with fast response times, transparent pricing, and professional drivers. Call ${BUSINESS.phone}.`,
   alternates: { canonical: "https://www.texastows.com/services/towing-service" },
+  openGraph: {
+    title: "Towing Service Dallas TX | 24/7 Tow Truck | Texas Tows",
+    description: `Need a tow in Dallas? Texas Tows Inc. provides 24/7 towing service with fast response times, transparent pricing, and professional drivers. Call ${BUSINESS.phone}.`,
+    url: "https://www.texastows.com/services/towing-service",
+    images: [{ url: PHOTOS.truckAction, alt: "Texas Tows Inc. tow truck providing towing service in Dallas, TX" }],
+  },
 };
 
 const schema = {

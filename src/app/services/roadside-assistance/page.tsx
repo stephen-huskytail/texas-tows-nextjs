@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Roadside Assistance Dallas TX | 24/7",
   description: `Stranded in Dallas? Texas Tows Inc. provides 24/7 roadside assistance — jumpstarts, tire changes, fuel delivery, and lockout service.`,
   alternates: { canonical: "https://www.texastows.com/services/roadside-assistance" },
+  openGraph: {
+    title: "Roadside Assistance Dallas TX | 24/7 | Texas Tows",
+    description: "Stranded in Dallas? Texas Tows Inc. provides 24/7 roadside assistance — jumpstarts, tire changes, fuel delivery, and lockout service.",
+    url: "https://www.texastows.com/services/roadside-assistance",
+    images: [{ url: PHOTOS.truck3, alt: "Texas Tows Inc. roadside assistance in Dallas, TX" }],
+  },
 };
 
 const schema = {

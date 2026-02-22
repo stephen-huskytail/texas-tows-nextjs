@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Vehicle Transport Dallas TX | Car Hauling",
   description: `Vehicle transport in Dallas — Texas Tows Inc. offers safe, professional transport for classic cars, luxury vehicles, and long-distance moves.`,
   alternates: { canonical: "https://www.texastows.com/services/vehicle-transport" },
+  openGraph: {
+    title: "Vehicle Transport Dallas TX | Car Hauling | Texas Tows",
+    description: "Vehicle transport in Dallas — Texas Tows Inc. offers safe, professional transport for classic cars, luxury vehicles, and long-distance moves.",
+    url: "https://www.texastows.com/services/vehicle-transport",
+    images: [{ url: PHOTOS.vehicleTransport, alt: "Texas Tows Inc. vehicle transport service in Dallas, TX" }],
+  },
 };
 
 const schema = {

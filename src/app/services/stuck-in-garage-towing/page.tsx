@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Garage Towing Dallas TX | Tight Spaces",
   description: `Vehicle stuck in a garage or tight space in Dallas? Texas Tows Inc. specializes in garage towing and tight-space vehicle removal. Call ${BUSINESS.phone}.`,
   alternates: { canonical: "https://www.texastows.com/services/stuck-in-garage-towing" },
+  openGraph: {
+    title: "Garage Towing Dallas TX | Tight Spaces | Texas Tows",
+    description: `Vehicle stuck in a garage or tight space in Dallas? Texas Tows Inc. specializes in garage towing and tight-space vehicle removal. Call ${BUSINESS.phone}.`,
+    url: "https://www.texastows.com/services/stuck-in-garage-towing",
+    images: [{ url: PHOTOS.truck7, alt: "Texas Tows Inc. stuck in garage towing service in Dallas, TX" }],
+  },
 };
 
 const schema = {

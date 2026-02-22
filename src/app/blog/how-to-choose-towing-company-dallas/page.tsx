@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "How to Choose a Towing Company in Dallas",
   description: "Dozens of towing companies in Dallas, but not all play fair. Questions to ask and red flags to watch before you hand over your keys.",
   alternates: { canonical: "https://www.texastows.com/blog/how-to-choose-towing-company-dallas" },
+  openGraph: {
+    title: "How to Choose a Towing Company in Dallas | Texas Tows",
+    description: "Dozens of towing companies in Dallas, but not all play fair. Questions to ask and red flags to watch before you hand over your keys.",
+    url: "https://www.texastows.com/blog/how-to-choose-towing-company-dallas",
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/JDgXPnlWDSHFqZfl.webp", alt: "How to choose a towing company in Dallas TX" }],
+  },
 };
 
 export default function HowToChooseTowingCompany() {

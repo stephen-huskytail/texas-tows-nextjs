@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, ArrowRight, Clock } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, PHOTOS } from "@/lib/constants";
 import { AREA_DATA } from "@/lib/areaData";
 
 export const metadata: Metadata = {
@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   description:
     "Texas Tows Inc. provides 24/7 towing and roadside assistance throughout Dallas, TX. See all neighborhoods and service areas we cover.",
   alternates: { canonical: "https://www.texastows.com/service-area" },
+  openGraph: {
+    title: "Dallas Towing Service Areas | Texas Tows",
+    description: "Texas Tows Inc. provides 24/7 towing and roadside assistance throughout Dallas, TX. See all neighborhoods and service areas we cover.",
+    url: "https://www.texastows.com/service-area",
+    images: [{ url: PHOTOS.truckAction, alt: "Texas Tows Inc. service areas across Dallas, TX" }],
+  },
 };
 
 // Neighborhood images — curated Unsplash photos for each Dallas area

@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Secondary Towing Dallas TX | Relocation",
   description: `Need secondary towing in Dallas? Texas Tows Inc. relocates your vehicle after an initial tow — to a repair shop, storage, or home. 24/7.`,
   alternates: { canonical: "https://www.texastows.com/services/secondary-towing" },
+  openGraph: {
+    title: "Secondary Towing Dallas TX | Relocation | Texas Tows",
+    description: "Need secondary towing in Dallas? Texas Tows Inc. relocates your vehicle after an initial tow — to a repair shop, storage, or home. 24/7.",
+    url: "https://www.texastows.com/services/secondary-towing",
+    images: [{ url: PHOTOS.truck8, alt: "Texas Tows Inc. secondary towing service in Dallas, TX" }],
+  },
 };
 
 const schema = {

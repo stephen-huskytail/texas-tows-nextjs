@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Accident Recovery Towing | Dallas TX",
   description: `Involved in an accident in Dallas? Texas Tows Inc. provides 24/7 accident recovery towing and emergency scene towing. Call ${BUSINESS.phone}.`,
   alternates: { canonical: "https://www.texastows.com/services/accident-recovery" },
+  openGraph: {
+    title: "Accident Recovery Towing | Dallas TX | Texas Tows",
+    description: `Involved in an accident in Dallas? Texas Tows Inc. provides 24/7 accident recovery towing and emergency scene towing. Call ${BUSINESS.phone}.`,
+    url: "https://www.texastows.com/services/accident-recovery",
+    images: [{ url: PHOTOS.truck5, alt: "Texas Tows Inc. accident recovery towing service in Dallas, TX" }],
+  },
 };
 
 const schema = {

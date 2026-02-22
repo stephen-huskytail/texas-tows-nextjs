@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description:
     "Texas Tows Inc. — Dallas’s trusted towing company since 2015. Licensed, insured, TDLR certified. Meet our team and our commitment to honest service.",
   alternates: { canonical: "https://www.texastows.com/about" },
+  openGraph: {
+    title: "About Texas Tows | Dallas Towing Co. | Texas Tows",
+    description: "Texas Tows Inc. — Dallas's trusted towing company since 2015. Licensed, insured, TDLR certified. Meet our team and our commitment to honest service.",
+    url: "https://www.texastows.com/about",
+    images: [{ url: PHOTOS.truckService, alt: "Texas Tows Inc. team and tow truck in Dallas, TX" }],
+  },
 };
 
 const values = [

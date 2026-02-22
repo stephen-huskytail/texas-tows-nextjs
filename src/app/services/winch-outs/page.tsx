@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Winch Out Service Dallas TX | Recovery",
   description: `Vehicle stuck in a ditch or off-road in Dallas? Texas Tows Inc. provides professional winch out and vehicle recovery service 24/7. Call ${BUSINESS.phone}.`,
   alternates: { canonical: "https://www.texastows.com/services/winch-outs" },
+  openGraph: {
+    title: "Winch Out Service Dallas TX | Recovery | Texas Tows",
+    description: `Vehicle stuck in a ditch or off-road in Dallas? Texas Tows Inc. provides professional winch out and vehicle recovery service 24/7. Call ${BUSINESS.phone}.`,
+    url: "https://www.texastows.com/services/winch-outs",
+    images: [{ url: PHOTOS.truck7, alt: "Texas Tows Inc. winch out and vehicle recovery service in Dallas, TX" }],
+  },
 };
 
 const schema = {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, ArrowRight } from "lucide-react";
-import { BUSINESS, SERVICES } from "@/lib/constants";
+import { BUSINESS, SERVICES, PHOTOS } from "@/lib/constants";
 import ServicesHeroQuote from "@/components/ServicesHeroQuote";
 
 export const metadata: Metadata = {
@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   description:
     "Texas Tows Inc. offers emergency towing, flatbed towing, roadside assistance, lockout service, winch-out recovery, and more in Dallas. 24/7.",
   alternates: { canonical: "https://www.texastows.com/services" },
+  openGraph: {
+    title: "Towing & Roadside Services | Dallas TX | Texas Tows",
+    description: "Texas Tows Inc. offers emergency towing, flatbed towing, roadside assistance, lockout service, winch-out recovery, and more in Dallas. 24/7.",
+    url: "https://www.texastows.com/services",
+    images: [{ url: PHOTOS.truckAction, alt: "Texas Tows Inc. towing services in Dallas, TX" }],
+  },
 };
 
 export default function ServicesPage() {

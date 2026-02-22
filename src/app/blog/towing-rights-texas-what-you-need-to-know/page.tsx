@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Your Towing Rights in Texas Explained",
   description: "Texas law governs towing pricing, documentation, and your right to retrieve your vehicle. Every Dallas driver should know these rules.",
   alternates: { canonical: "https://www.texastows.com/blog/towing-rights-texas-what-you-need-to-know" },
+  openGraph: {
+    title: "Your Towing Rights in Texas Explained | Texas Tows",
+    description: "Texas law governs towing pricing, documentation, and your right to retrieve your vehicle. Every Dallas driver should know these rules.",
+    url: "https://www.texastows.com/blog/towing-rights-texas-what-you-need-to-know",
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/RoPxLvfdkIeiMLrg.webp", alt: "Texas Tows tow truck on a Dallas street" }],
+  },
 };
 
 export default function TowingRightsTexas() {

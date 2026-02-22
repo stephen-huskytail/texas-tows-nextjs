@@ -2,13 +2,19 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, Tag } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, PHOTOS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Towing Tips & Advice Blog | Dallas TX",
   description:
     "Towing tips, roadside advice, and consumer guides from Texas Tows Inc. Know your rights, stay safe, and make smart towing decisions in Dallas.",
   alternates: { canonical: "https://www.texastows.com/blog" },
+  openGraph: {
+    title: "Towing Tips & Advice Blog | Dallas TX | Texas Tows",
+    description: "Towing tips, roadside advice, and consumer guides from Texas Tows Inc. Know your rights, stay safe, and make smart towing decisions in Dallas.",
+    url: "https://www.texastows.com/blog",
+    images: [{ url: PHOTOS.truckAction, alt: "Texas Tows Inc. blog — towing tips and advice" }],
+  },
 };
 
 const blogPosts = [

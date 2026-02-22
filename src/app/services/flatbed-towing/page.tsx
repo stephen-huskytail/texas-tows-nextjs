@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Flatbed Towing Dallas TX | AWD & Luxury",
   description: `Need flatbed towing in Dallas? Texas Tows Inc. provides safe flatbed towing for luxury, lowered, and AWD vehicles. Zero wheel contact. Call ${BUSINESS.phone}.`,
   alternates: { canonical: "https://www.texastows.com/services/flatbed-towing" },
+  openGraph: {
+    title: "Flatbed Towing Dallas TX | AWD & Luxury | Texas Tows",
+    description: `Need flatbed towing in Dallas? Texas Tows Inc. provides safe flatbed towing for luxury, lowered, and AWD vehicles. Zero wheel contact. Call ${BUSINESS.phone}.`,
+    url: "https://www.texastows.com/services/flatbed-towing",
+    images: [{ url: PHOTOS.truckFlatbed, alt: "Texas Tows Inc. flatbed towing service in Dallas, TX" }],
+  },
 };
 
 const schema = {

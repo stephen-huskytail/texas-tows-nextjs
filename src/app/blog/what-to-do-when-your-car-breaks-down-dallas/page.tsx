@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Car Broke Down in Dallas? Do This First",
   description: "Car broke down on a Dallas highway? A step-by-step guide to staying safe and getting help fast — from the moment you stop to getting back on the road.",
   alternates: { canonical: "https://www.texastows.com/blog/what-to-do-when-your-car-breaks-down-dallas" },
+  openGraph: {
+    title: "Car Broke Down in Dallas? Do This First | Texas Tows",
+    description: "Car broke down on a Dallas highway? A step-by-step guide to staying safe and getting help fast — from the moment you stop to getting back on the road.",
+    url: "https://www.texastows.com/blog/what-to-do-when-your-car-breaks-down-dallas",
+    images: [{ url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663302699278/vuXtOpWtHeHmIMjV.webp", alt: "Texas Tows Inc. tow truck on a Dallas road" }],
+  },
 };
 
 export default function WhatToDoCarBreaksDown() {

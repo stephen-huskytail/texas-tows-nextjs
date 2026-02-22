@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Junk Car Removal Dallas TX | Free Towing",
   description: `Need junk car removal in Dallas? Texas Tows Inc. provides free tow-away service for junk, salvage, or non-running vehicles. Call ${BUSINESS.phone}.`,
   alternates: { canonical: "https://www.texastows.com/services/junk-car-removal" },
+  openGraph: {
+    title: "Junk Car Removal Dallas TX | Free Towing | Texas Tows",
+    description: `Need junk car removal in Dallas? Texas Tows Inc. provides free tow-away service for junk, salvage, or non-running vehicles. Call ${BUSINESS.phone}.`,
+    url: "https://www.texastows.com/services/junk-car-removal",
+    images: [{ url: PHOTOS.truck4, alt: "Texas Tows Inc. junk car removal service in Dallas, TX" }],
+  },
 };
 
 const schema = {
