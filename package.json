@@ -8,6 +8,15 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "chrome >= 109",
+    "edge >= 109",
+    "firefox >= 115",
+    "safari >= 16",
+    "opera >= 95",
+    "not dead",
+    "not op_mini all"
+  ],
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@tailwindcss/typography": "^0.5.19",
