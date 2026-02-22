@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
 import { BUSINESS, getCurrentPromo, PHOTOS } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
+import LazyGoogleMap from "@/components/LazyGoogleMap";
 
 export const metadata: Metadata = {
   title: "Contact Us | 24/7 Dallas Towing",
@@ -107,22 +108,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map */}
+      {/* Map — lazy-loaded to avoid 350KB of third-party scripts on initial load */}
       <section className="bg-gray-50 py-20">
         <div className="container-tx">
-          <div
-            className="rounded-xl overflow-hidden shadow-lg border border-gray-200"
-            style={{ width: "100%", height: 400, backgroundColor: "#e5e7eb" }}
-          >
-            <iframe
-              title="Texas Tows Inc. location map"
+          <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            <LazyGoogleMap
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.8!2d-96.78370!3d32.83370!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f3d6b2e4b5d%3A0x0!2s4245+N+Central+Expy+%23490%2C+Dallas%2C+TX+75205!5e0!3m2!1sen!2sus!4v1708000000000!5m2!1sen!2sus"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              title="Texas Tows Inc. location map"
+              height={400}
             />
           </div>
         </div>
