@@ -46,16 +46,34 @@ export default function ServiceAreaPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0a2340] py-20 md:py-28">
-        <div className="container-tx text-center">
+      <section className="relative py-24 md:py-36 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={PHOTOS.truckAction}
+            alt="Texas Tows Inc. tow truck serving Dallas neighborhoods — service area coverage"
+            fill
+            className="object-cover object-[center_40%]"
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-[#0a2340]/80" />
+        </div>
+        <div className="container-tx text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">
             <MapPin className="w-4 h-4 text-[#fef15f]" />
             <span className="text-white text-sm font-medium">Dallas, TX &amp; Surrounding Neighborhoods</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-4">
+          <h1
+            className="text-4xl md:text-5xl font-heading font-extrabold text-white mb-4"
+            style={{ textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}
+          >
             Our Dallas Towing Service Areas
           </h1>
-          <p className="text-xl text-white/75 max-w-3xl mx-auto mb-8">
+          <p
+            className="text-xl text-white/85 max-w-3xl mx-auto mb-8"
+            style={{ textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}
+          >
             Texas Tows Inc. serves all of Dallas and its neighborhoods with 24/7 towing and roadside assistance. Find your area below.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
