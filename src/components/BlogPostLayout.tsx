@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, ArrowLeft, Phone, ExternalLink } from "lucide-react";
-import { BUSINESS, getCurrentPromo } from "@/lib/constants";
+import { BUSINESS, PHOTOS, getCurrentPromo } from "@/lib/constants";
 
 interface BlogPostLayoutProps {
   title: string;
@@ -11,6 +11,7 @@ interface BlogPostLayoutProps {
   description: string;
   featuredImage?: string;
   featuredImageAlt?: string;
+  slug?: string;
   children: React.ReactNode;
 }
 
@@ -22,6 +23,7 @@ export default function BlogPostLayout({
   description,
   featuredImage,
   featuredImageAlt,
+  slug,
   children,
 }: BlogPostLayoutProps) {
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
@@ -32,8 +34,44 @@ export default function BlogPostLayout({
 
   const promo = getCurrentPromo();
 
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: description,
+    datePublished: date,
+    dateModified: date,
+    author: {
+      "@type": "Organization",
+      name: "Texas Tows Inc.",
+      url: BUSINESS.siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Texas Tows Inc.",
+      url: BUSINESS.siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: PHOTOS.logo,
+      },
+    },
+    ...(featuredImage ? { image: featuredImage } : {}),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": slug
+        ? `${BUSINESS.siteUrl}/blog/${slug}`
+        : `${BUSINESS.siteUrl}/blog`,
+    },
+  };
+
   return (
     <>
+      {/* BlogPosting Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+
       {/* Hero — dark header with reduced padding to avoid excessive gap */}
       <section
         className="bg-[#0a2340] pb-10 md:pb-14"

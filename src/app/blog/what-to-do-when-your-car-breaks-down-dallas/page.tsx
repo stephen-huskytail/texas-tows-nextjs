@@ -13,6 +13,7 @@ export default function WhatToDoCarBreaksDown() {
   return (
     <BlogPostLayout
       title="What to Do When Your Car Breaks Down in Dallas"
+      slug="what-to-do-when-your-car-breaks-down-dallas"
       date="2025-12-10"
       readTime="5 min read"
       category="Safety Tips"

@@ -12,6 +12,7 @@ export default function DeadBatteryDallas() {
   return (
     <BlogPostLayout
       title="Dead Battery in Dallas? Here's What to Do (and What Not to Do)"
+      slug="dead-battery-dallas-what-to-do"
       date="2025-10-18"
       readTime="4 min read"
       category="Roadside Tips"

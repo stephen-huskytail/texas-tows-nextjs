@@ -12,6 +12,7 @@ export default function TowingRightsTexas() {
   return (
     <BlogPostLayout
       title="Your Towing Rights in Texas: What Every Driver Needs to Know"
+      slug="towing-rights-texas-what-you-need-to-know"
       date="2025-10-02"
       readTime="7 min read"
       category="Know Your Rights"

@@ -12,6 +12,7 @@ export default function HowToChooseTowingCompany() {
   return (
     <BlogPostLayout
       title="How to Choose a Towing Company in Dallas You Can Actually Trust"
+      slug="how-to-choose-towing-company-dallas"
       date="2025-11-05"
       readTime="6 min read"
       category="Consumer Advice"

@@ -12,6 +12,7 @@ export default function FlatbedVsWheelLift() {
   return (
     <BlogPostLayout
       title="Flatbed vs. Wheel-Lift Towing: Which Is Right for Your Vehicle?"
+      slug="flatbed-vs-wheel-lift-towing-dallas"
       date="2025-11-22"
       readTime="4 min read"
       category="Towing Education"

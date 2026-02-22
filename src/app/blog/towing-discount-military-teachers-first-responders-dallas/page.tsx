@@ -12,6 +12,7 @@ export default function MilitaryDiscountTowing() {
   return (
     <BlogPostLayout
       title="Texas Tows Offers 15% Off for Military, Teachers & First Responders in Dallas"
+      slug="towing-discount-military-teachers-first-responders-dallas"
       date="2025-09-15"
       readTime="4 min read"
       category="Community"
