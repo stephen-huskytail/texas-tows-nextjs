@@ -16,38 +16,11 @@ export const metadata: Metadata = {
   },
 };
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Texas Tows Inc.",
-  telephone: BUSINESS.phoneTel,
-  email: BUSINESS.email,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: BUSINESS.address.street,
-    addressLocality: BUSINESS.address.city,
-    addressRegion: BUSINESS.address.state,
-    postalCode: BUSINESS.address.zip,
-    addressCountry: "US",
-  },
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    opens: "00:00",
-    closes: "23:59",
-  },
-};
-
 export default function ContactPage() {
   const promo = getCurrentPromo();
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-
       {/* Hero */}
       <section className="bg-[#0a2340] py-20 md:py-28">
         <div className="container-tx text-center">
