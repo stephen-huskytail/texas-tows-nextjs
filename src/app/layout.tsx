@@ -26,8 +26,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.texastows.com"),
   title: {
-    default: "Texas Tows Inc. | 24/7 Towing Service Dallas, TX | (817) 512-1024",
-    template: "%s | Texas Tows Inc. — Dallas Towing",
+    default: "Texas Tows Inc. | 24/7 Towing Dallas TX",
+    template: "%s | Texas Tows",
   },
   description:
     "Texas Tows Inc. provides fast, reliable 24/7 towing and roadside assistance in Dallas, TX. Licensed, insured, TDLR certified. Call (817) 512-1024 for immediate help.",

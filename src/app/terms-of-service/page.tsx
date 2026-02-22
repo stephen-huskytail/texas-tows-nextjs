@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Texas Tows Inc. Dallas TX",
+  title: "Terms of Service",
   description: "Texas Tows Inc. terms of service — governing towing, roadside assistance, and vehicle transport services in Dallas, TX. TDLR-licensed and fully compliant.",
   alternates: { canonical: "https://www.texastows.com/terms-of-service" },
 };

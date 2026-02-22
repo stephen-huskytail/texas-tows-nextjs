@@ -5,7 +5,7 @@ import { ArrowRight, Calendar, Tag } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Towing Tips & Advice Blog | Texas Tows Inc. Dallas TX",
+  title: "Towing Tips & Advice Blog | Dallas TX",
   description:
     "Towing tips, roadside advice, and consumer guides from Texas Tows Inc. — Dallas's trusted 24/7 towing company. Know your rights, stay safe, and make smart decisions.",
   alternates: { canonical: "https://www.texastows.com/blog" },

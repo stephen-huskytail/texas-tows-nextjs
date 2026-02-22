@@ -6,7 +6,7 @@ import { BUSINESS, SERVICES } from "@/lib/constants";
 import ServicesHeroQuote from "@/components/ServicesHeroQuote";
 
 export const metadata: Metadata = {
-  title: "Towing & Roadside Assistance Services in Dallas TX | Texas Tows Inc.",
+  title: "Towing & Roadside Services | Dallas TX",
   description:
     "Texas Tows Inc. offers emergency towing, flatbed towing, roadside assistance, lockout service, fuel delivery, winch-out recovery, and junk car removal in Dallas, TX. Available 24/7.",
   alternates: { canonical: "https://www.texastows.com/services" },

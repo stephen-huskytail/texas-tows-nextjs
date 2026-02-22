@@ -3,7 +3,7 @@ import { BUSINESS, PHOTOS } from "@/lib/constants";
 import ServicePageClient from "@/components/ServicePageClient";
 
 export const metadata: Metadata = {
-  title: "Junk Car Removal Dallas TX | Free Tow-Away Service | Texas Tows",
+  title: "Junk Car Removal Dallas TX | Free Towing",
   description: `Need junk car removal in Dallas? Texas Tows Inc. provides free tow-away service for junk, salvage, or non-running vehicles. Call ${BUSINESS.phone}.`,
   alternates: { canonical: "https://www.texastows.com/services/junk-car-removal" },
 };

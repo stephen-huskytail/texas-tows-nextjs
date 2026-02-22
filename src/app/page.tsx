@@ -12,12 +12,12 @@ import ContactForm from "@/components/ContactForm";
 import HomeHeroQuote from "@/components/HomeHeroQuote";
 
 export const metadata: Metadata = {
-  title: "Towing Service Dallas TX | 24/7 Tow Truck | Texas Tows Inc.",
+  title: "24/7 Towing Service Dallas TX",
   description:
     "Texas Tows Inc. — Dallas's best-rated 24/7 towing service. Fast response, transparent pricing, licensed & insured. Call (817) 512-1024 for immediate help.",
   alternates: { canonical: "https://www.texastows.com" },
   openGraph: {
-    title: "Texas Tows Inc. | 24/7 Towing Service Dallas, TX",
+    title: "24/7 Towing Service Dallas TX | Texas Tows",
     description: "Fast, reliable 24/7 towing and roadside assistance in Dallas, TX. Call (817) 512-1024.",
     url: "https://www.texastows.com",
     images: [{ url: PHOTOS.hero, width: 1200, height: 630 }],

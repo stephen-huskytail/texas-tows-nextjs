@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Texas Tows Inc. Dallas TX",
+  title: "Privacy Policy",
   description: "Texas Tows Inc. privacy policy — how we collect, use, and protect your personal information. TDLR-licensed towing company serving Dallas, TX.",
   alternates: { canonical: "https://www.texastows.com/privacy-policy" },
 };

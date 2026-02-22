@@ -3,7 +3,7 @@ import { BUSINESS } from "@/lib/constants";
 import BlogPostLayout from "@/components/BlogPostLayout";
 
 export const metadata: Metadata = {
-  title: "Your Towing Rights in Texas: What Every Driver Needs to Know | Texas Tows",
+  title: "Your Towing Rights in Texas Explained",
   description: "Texas has specific laws governing towing companies — including pricing, documentation, and your right to retrieve your vehicle. Every Dallas driver should know these rules.",
   alternates: { canonical: "https://www.texastows.com/blog/towing-rights-texas-what-you-need-to-know" },
 };

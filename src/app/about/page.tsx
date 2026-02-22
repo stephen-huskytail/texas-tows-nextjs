@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import { BUSINESS, PHOTOS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Texas Tows Inc. | Dallas Towing Company Since 2015",
+  title: "About Texas Tows | Dallas Towing Co.",
   description:
     "Learn about Texas Tows Inc. — Dallas's trusted towing company since 2015. Licensed, insured, TDLR certified. Meet our team and discover our commitment to honest, professional service.",
   alternates: { canonical: "https://www.texastows.com/about" },

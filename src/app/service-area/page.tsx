@@ -6,7 +6,7 @@ import { BUSINESS } from "@/lib/constants";
 import { AREA_DATA } from "@/lib/areaData";
 
 export const metadata: Metadata = {
-  title: "Dallas Towing Service Areas | Texas Tows Inc.",
+  title: "Dallas Towing Service Areas",
   description:
     "Texas Tows Inc. provides 24/7 towing and roadside assistance throughout Dallas, TX. See all neighborhoods and service areas we cover.",
   alternates: { canonical: "https://www.texastows.com/service-area" },

@@ -3,7 +3,7 @@ import { BUSINESS, PHOTOS } from "@/lib/constants";
 import ServicePageClient from "@/components/ServicePageClient";
 
 export const metadata: Metadata = {
-  title: "Stuck in Garage Towing Dallas TX | Tight Space Vehicle Removal | Texas Tows",
+  title: "Garage Towing Dallas TX | Tight Spaces",
   description: `Vehicle stuck in a garage or tight space in Dallas? Texas Tows Inc. specializes in garage towing and tight-space vehicle removal. Call ${BUSINESS.phone}.`,
   alternates: { canonical: "https://www.texastows.com/services/stuck-in-garage-towing" },
 };
