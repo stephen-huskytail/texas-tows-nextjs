@@ -20,7 +20,7 @@ export default function EmergencyRoadsideAssistanceTexas() {
       readTime="8 min read"
       category="Roadside Tips"
       description="Stranded on a Texas highway? Learn what to do during a roadside emergency, your rights under Texas law, how to choose a reliable provider, and how to prepare before it happens."
-      featuredImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-emergency-roadside-assistance-texas-DDEko5SioTpe3EUefPq27o.webp"
+      featuredImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-emergency-roadside-assistance-texas_28befbb9.jpg"
       featuredImageAlt="Professional roadside assistance technician helping a stranded driver on a Texas highway at night with Dallas skyline in the background"
     >
       <p>
