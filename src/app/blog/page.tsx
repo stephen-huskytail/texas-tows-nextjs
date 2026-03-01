@@ -19,6 +19,17 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "heavy-duty-vs-light-duty-towing-dallas",
+    title: "Heavy-Duty vs. Light-Duty Towing in Dallas: What's the Difference?",
+    excerpt:
+      "Not all tow trucks are built the same. Learn the key differences between heavy-duty and light-duty towing, what each service covers, and how to pick the right one for your vehicle in Dallas.",
+    date: "2026-02-28",
+    category: "Towing Education",
+    readTime: "7 min read",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-heavy-vs-light-duty-towing-75cq2tdUnvxdVD2EFGiSEG.webp",
+  },
+  {
     slug: "what-to-do-when-your-car-breaks-down-dallas",
     title: "What to Do When Your Car Breaks Down in Dallas",
     excerpt: "Breaking down on a Dallas highway is stressful. Here's a step-by-step guide to staying safe and getting help fast — from the moment your car stops to the moment you're back on the road.",
