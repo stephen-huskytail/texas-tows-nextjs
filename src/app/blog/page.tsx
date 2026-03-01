@@ -19,6 +19,17 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "emergency-roadside-assistance-texas",
+    title: "Emergency Roadside Assistance in Texas: What Every Driver Needs to Know",
+    excerpt:
+      "Stranded on a Texas highway? Learn what to do during a roadside emergency, your rights under Texas law, how to choose a reliable provider, and how to prepare before it happens.",
+    date: "2026-02-28",
+    category: "Roadside Tips",
+    readTime: "8 min read",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-emergency-roadside-assistance-texas-DDEko5SioTpe3EUefPq27o.webp",
+  },
+  {
     slug: "heavy-duty-vs-light-duty-towing-dallas",
     title: "Heavy-Duty vs. Light-Duty Towing in Dallas: What's the Difference?",
     excerpt:

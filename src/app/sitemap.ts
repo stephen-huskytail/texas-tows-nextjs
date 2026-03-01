@@ -17,6 +17,7 @@ const servicePages = [
 ];
 
 const blogPosts = [
+  "emergency-roadside-assistance-texas",
   "heavy-duty-vs-light-duty-towing-dallas",
   "what-to-do-when-your-car-breaks-down-dallas",
   "flatbed-vs-wheel-lift-towing-dallas",
