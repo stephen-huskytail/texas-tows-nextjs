@@ -233,11 +233,91 @@ export default function BlogPostLayout({
                   </div>
                 </div>
 
-                {/* 4. Monthly promo reminder — auto-rotates */}
-                <div className="rounded-xl p-5 bg-blue-50 border border-blue-100">
-                  <div className="text-2xl mb-2">🎖️</div>
-                  <h4 className="font-heading font-bold text-[#0a2340] mb-1 text-sm">{promo.shortLabel}</h4>
-                  <p className="text-gray-600 text-sm">{promo.description}</p>
+                {/* 4. Monthly promo reminder — patriotic redesign */}
+                <div className="rounded-xl overflow-hidden border border-red-200 shadow-md">
+                  {/* Patriotic header with navy and red gradient */}
+                  <div className="bg-gradient-to-r from-[#0a2340] via-[#1a3a52] to-[#0a2340] px-5 pt-5 pb-4 relative">
+                    {/* Shield icon SVG */}
+                    <div className="absolute top-3 right-3 opacity-10">
+                      <svg
+                        className="w-16 h-16 text-white"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                      </svg>
+                    </div>
+
+                    {/* Bold 15% discount */}
+                    <div className="mb-3">
+                      <div className="text-5xl font-heading font-black text-[#fef15f] leading-none">
+                        15%
+                      </div>
+                      <div className="text-xs font-semibold text-white/80 mt-1 tracking-wide">
+                        DISCOUNT
+                      </div>
+                    </div>
+
+                    {/* Service icons row */}
+                    <div className="flex items-center gap-2 mt-4 pt-3 border-t border-white/20">
+                      {/* Police icon */}
+                      <div className="flex-1 text-center">
+                        <svg
+                          className="w-5 h-5 text-white mx-auto mb-1"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path d="M12 1l-3 6H3v12h18V7h-6l-3-6zm0 3l1.5 3h-3L12 4zm-6 6h12v8H6v-8z" />
+                        </svg>
+                        <span className="text-xs text-white/70 font-semibold">Police</span>
+                      </div>
+                      {/* Fire icon */}
+                      <div className="flex-1 text-center">
+                        <svg
+                          className="w-5 h-5 text-white mx-auto mb-1"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path d="M12 2c-1 0-1 1-1 1s-3 4-3 7c0 2 1 4 3 5v7h2v-7c2-1 3-3 3-5 0-3-3-7-3-7s0-1-1-1zm0 8c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z" />
+                        </svg>
+                        <span className="text-xs text-white/70 font-semibold">Fire</span>
+                      </div>
+                      {/* EMS/Ambulance icon */}
+                      <div className="flex-1 text-center">
+                        <svg
+                          className="w-5 h-5 text-white mx-auto mb-1"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path d="M18 8h-1V6c0-2.76-2.24-5-5-5s-5 2.24-5 5v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6-2c1.66 0 3 1.34 3 3v2h-6V9c0-1.66 1.34-3 3-3zm6 14H6V10h12v10zm-5-8h2v2h-2v-2zm0 4h2v2h-2v-2z" />
+                        </svg>
+                        <span className="text-xs text-white/70 font-semibold">EMS</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Description and CTA */}
+                  <div className="bg-white px-5 py-4">
+                    <h4 className="font-heading font-bold text-[#0a2340] text-sm mb-2">
+                      {promo.shortLabel}
+                    </h4>
+                    <p className="text-gray-600 text-xs leading-relaxed mb-4">
+                      {promo.description}
+                    </p>
+
+                    {/* Stronger CTA */}
+                    <a
+                      href={BUSINESS.phoneHref}
+                      className="flex items-center justify-center gap-2 w-full py-3 rounded-lg font-heading font-bold text-sm text-white bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transition-all duration-200 shadow-md hover:shadow-lg"
+                    >
+                      <Phone className="w-4 h-4" />
+                      Call Now & Mention Your Service
+                    </a>
+                    <p className="text-center text-xs text-gray-500 mt-2 font-semibold">
+                      {BUSINESS.phone}
+                    </p>
+                  </div>
                 </div>
 
                 {/* Back to Blog */}
