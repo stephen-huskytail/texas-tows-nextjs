@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { AREA_DATA } from "@/lib/areaData";
+import { getPublishedPosts } from "@/lib/blogData";
 
 const BASE_URL = "https://www.texastows.com";
 
@@ -14,19 +15,6 @@ const servicePages = [
   "stuck-in-garage-towing",
   "secondary-towing",
   "unattended-towing",
-];
-
-const blogPosts = [
-  "towing-after-car-accident-dallas",
-  "how-long-can-car-sit-on-side-of-road-texas",
-  "emergency-roadside-assistance-texas",
-  "heavy-duty-vs-light-duty-towing-dallas",
-  "what-to-do-when-your-car-breaks-down-dallas",
-  "flatbed-vs-wheel-lift-towing-dallas",
-  "how-to-choose-towing-company-dallas",
-  "dead-battery-dallas-what-to-do",
-  "towing-rights-texas-what-you-need-to-know",
-  "towing-discount-military-teachers-first-responders-dallas",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -61,10 +49,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Blog posts
-  const blogEntries: MetadataRoute.Sitemap = blogPosts.map((slug) => ({
-    url: `${BASE_URL}/blog/${slug}`,
-    lastModified: now,
+  // Blog posts — only include published posts (date <= today in CST)
+  const publishedPosts = getPublishedPosts();
+  const blogEntries: MetadataRoute.Sitemap = publishedPosts.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
     changeFrequency: "yearly",
     priority: 0.6,
   }));

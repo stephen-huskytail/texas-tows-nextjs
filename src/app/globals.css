@@ -146,6 +146,62 @@
     @apply border-gray-200 my-8;
   }
 
+  /* ── Blog tables ────────────────────────────────────────────────────── */
+  .blog-prose table {
+    @apply w-full border-collapse rounded-lg overflow-hidden my-6 text-sm;
+    border: 1px solid #e2e8f0;
+  }
+
+  .blog-prose thead {
+    background-color: #0a2340;
+  }
+
+  .blog-prose thead th {
+    @apply text-white font-heading font-semibold text-left px-4 py-3 text-sm;
+    border-bottom: 2px solid #045cb4;
+  }
+
+  .blog-prose tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.15s ease;
+  }
+
+  .blog-prose tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  .blog-prose tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .blog-prose tbody tr:hover {
+    background-color: #eff6ff;
+  }
+
+  .blog-prose tbody td {
+    @apply px-4 py-3 text-gray-700;
+    border-right: 1px solid #e2e8f0;
+  }
+
+  .blog-prose tbody td:last-child {
+    border-right: none;
+  }
+
+  /* Responsive: horizontal scroll on small screens */
+  @media (max-width: 640px) {
+    .blog-prose table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .blog-prose thead th,
+    .blog-prose tbody td {
+      @apply px-3 py-2 text-xs;
+      white-space: nowrap;
+    }
+  }
+
   /* ── FAQ accordion ───────────────────────────────────────────────────── */
   .faq-answer {
     overflow: hidden;

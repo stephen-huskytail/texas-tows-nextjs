@@ -1,4 +1,10 @@
 {
+  "crons": [
+    {
+      "path": "/api/cron/publish",
+      "schedule": "0 6 * * *"
+    }
+  ],
   "trailingSlash": false,
   "headers": [
     {
