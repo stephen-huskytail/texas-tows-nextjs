@@ -19,6 +19,28 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "how-long-can-car-sit-on-side-of-road-texas",
+    title: "How Long Can Your Car Sit on the Side of the Road in Texas?",
+    excerpt:
+      "Abandoned vehicle Texas law explained — learn how long your car can sit on a Texas highway before it gets towed, fees, and how to avoid impound. Call 24/7.",
+    date: "2026-03-06",
+    category: "Legal & Rights",
+    readTime: "7 min read",
+    image:
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310419663030307747/bBvFOTxJGEFTAjuE.jpg",
+  },
+  {
+    slug: "towing-after-car-accident-dallas",
+    title: "What Happens to Your Car After an Accident in Dallas?",
+    excerpt:
+      "Towing after a car accident in Dallas — learn what happens to your vehicle, your rights under Texas law, and how to choose a TDLR-licensed towing company. Call 24/7.",
+    date: "2026-03-03",
+    category: "Towing Education",
+    readTime: "7 min read",
+    image:
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310419663030307747/MDgTOPXPNxZRSmrB.jpg",
+  },
+  {
     slug: "emergency-roadside-assistance-texas",
     title: "Emergency Roadside Assistance in Texas: What Every Driver Needs to Know",
     excerpt:

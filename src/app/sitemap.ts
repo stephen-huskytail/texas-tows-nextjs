@@ -17,6 +17,8 @@ const servicePages = [
 ];
 
 const blogPosts = [
+  "towing-after-car-accident-dallas",
+  "how-long-can-car-sit-on-side-of-road-texas",
   "emergency-roadside-assistance-texas",
   "heavy-duty-vs-light-duty-towing-dallas",
   "what-to-do-when-your-car-breaks-down-dallas",
