@@ -20,7 +20,7 @@ export default function HeavyVsLightDutyTowing() {
       readTime="7 min read"
       category="Towing Education"
       description="Not all tow trucks are built the same. Learn the key differences between heavy-duty and light-duty towing, what each service covers, and how to pick the right one for your vehicle in Dallas."
-      featuredImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-heavy-vs-light-duty-towing_2a04f423.jpg"
+      featuredImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-heavy-duty-optimized_d9e5ecef.webp"
       featuredImageAlt="Heavy-duty rotator wrecker recovering an overturned semi-truck alongside a flatbed tow truck loading a passenger car in Dallas"
     >
       <p>
