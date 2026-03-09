@@ -20,6 +20,28 @@ export interface BlogPost {
  */
 export const ALL_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "towing-after-accident-dallas",
+    title: "Towing in Dallas After an Accident: What to Do in the First 30 Minutes",
+    excerpt:
+      "Been in a car accident in Dallas? Here's exactly what to do in the first 30 minutes — from the scene to the tow — including your right to choose your own towing company.",
+    date: "2026-03-09",
+    category: "Know Your Rights",
+    readTime: "8 min read",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-towing-after-accident-dallas-P87g6fLC5BiZzqJeBXGpqN.webp",
+  },
+  {
+    slug: "how-long-does-a-tow-take-dallas",
+    title: "How Long Does a Tow Take in Dallas? What to Expect From Call to Drop-Off",
+    excerpt:
+      "Wondering how long a tow truck takes in Dallas? Learn average response times, what affects your wait, and exactly what happens from your first call to final drop-off.",
+    date: "2026-03-09",
+    category: "Towing Education",
+    readTime: "6 min read",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-how-long-does-tow-take-dallas-v2-HY2UULjiZYvhWo5z6AG64b.webp",
+  },
+  {
     slug: "how-long-can-car-sit-on-side-of-road-texas",
     title: "How Long Can Your Car Sit on the Side of the Road in Texas?",
     excerpt:
