@@ -20,6 +20,28 @@ export interface BlogPost {
  */
 export const ALL_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "junk-car-removal-dallas",
+    title: "Junk Car Removal in Dallas: What to Expect and How It Works",
+    excerpt:
+      "Ready to get rid of an old, wrecked, or non-running vehicle in Dallas? Learn how junk car removal works, what you need to have ready, and how Texas Tows makes the process simple.",
+    date: "2026-03-16",
+    category: "Consumer Advice",
+    readTime: "7 min read",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-junk-car-removal-dallas-6W6wJxQm47fwbTm3niTwDY.webp",
+  },
+  {
+    slug: "stuck-in-ditch-dallas-winch-out-service",
+    title: "Car Stuck in a Ditch in Dallas? Here\u2019s What to Do",
+    excerpt:
+      "Car stuck in a ditch, mud, or off-road in Dallas? Learn when to call a winch-out service, what the process looks like, and why DIY recovery often makes it worse. Texas Tows responds 24/7.",
+    date: "2026-03-16",
+    category: "Roadside Tips",
+    readTime: "7 min read",
+    image:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663302699278/Jgpf9ic4jjaFgb9BZVtjff/blog-winch-out-stuck-car-dallas-jCbiDrMQ8i97Mpf3GWbNDg.webp",
+  },
+  {
     slug: "towing-after-accident-dallas",
     title: "Towing in Dallas After an Accident: What to Do in the First 30 Minutes",
     excerpt:
