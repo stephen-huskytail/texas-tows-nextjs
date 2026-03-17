@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://texastows.com/blog/towing-suv-truck-dallas",
     images: [
       {
-        url: "https://tinyurl.com/Ges8pTBs57jLkhNjfC-img",
+        url: "https://tinyurl.com/PwC4DxRZCTqx6t9mQW-img",
         alt: "Flatbed tow truck loading a large SUV on a Dallas Texas highway",
       },
     ],
@@ -33,7 +33,7 @@ export default function TowingSuvTruckDallas() {
       readTime="7 min read"
       category="Towing Education"
       description="SUVs and trucks need special towing considerations in Dallas. Learn which equipment is right for your vehicle, why AWD matters, and how to avoid damage. Call 24/7."
-      featuredImage="https://tinyurl.com/Ges8pTBs57jLkhNjfC-img"
+      featuredImage="https://tinyurl.com/PwC4DxRZCTqx6t9mQW-img"
       featuredImageAlt="Flatbed tow truck loading a large SUV on a Dallas Texas highway"
     >
       <p>
