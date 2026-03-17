@@ -20,6 +20,17 @@ export interface BlogPost {
  */
 export const ALL_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "towing-suv-truck-dallas",
+    title: "Towing an SUV or Truck in Dallas: What You Need to Know",
+    excerpt:
+      "SUVs and trucks need special towing considerations in Dallas. Learn which equipment is right for your vehicle, why AWD matters, and how to avoid drivetrain damage. Call 24/7.",
+    date: "2026-03-17",
+    category: "Towing Education",
+    readTime: "7 min read",
+    image:
+      "https://tinyurl.com/Ges8pTBs57jLkhNjfC-img",
+  },
+  {
     slug: "junk-car-removal-dallas",
     title: "Junk Car Removal in Dallas: What to Expect and How It Works",
     excerpt:
