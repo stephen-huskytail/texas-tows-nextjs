@@ -20,6 +20,17 @@ export interface BlogPost {
  */
 export const ALL_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "spring-car-maintenance-checklist-dallas",
+    title: "Spring Car Maintenance Checklist for Dallas Drivers",
+    excerpt:
+      "Prepare your vehicle for Dallas spring and summer heat with this seasonal maintenance checklist. Prevent breakdowns before they happen. Call Texas Tows 24/7.",
+    date: "2026-03-17",
+    category: "Seasonal",
+    readTime: "8 min read",
+    image:
+      "/images/blog-spring-car-maintenance-checklist-dallas.webp",
+  },
+  {
     slug: "towing-suv-truck-dallas",
     title: "Towing an SUV or Truck in Dallas: What You Need to Know",
     excerpt:
