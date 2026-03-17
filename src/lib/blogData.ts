@@ -24,7 +24,7 @@ export const ALL_BLOG_POSTS: BlogPost[] = [
     title: "Towing an SUV or Truck in Dallas: What You Need to Know",
     excerpt:
       "SUVs and trucks need special towing considerations in Dallas. Learn which equipment is right for your vehicle, why AWD matters, and how to avoid drivetrain damage. Call 24/7.",
-    date: "2026-03-17",
+    date: "2026-03-16",
     category: "Towing Education",
     readTime: "7 min read",
     image:
