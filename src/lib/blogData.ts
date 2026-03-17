@@ -28,7 +28,7 @@ export const ALL_BLOG_POSTS: BlogPost[] = [
     category: "Towing Education",
     readTime: "7 min read",
     image:
-      "https://tinyurl.com/PwC4DxRZCTqx6t9mQW-img",
+      "/images/blog-towing-suv-truck-dallas.webp",
   },
   {
     slug: "junk-car-removal-dallas",
