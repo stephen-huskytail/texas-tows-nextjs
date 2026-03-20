@@ -20,6 +20,17 @@ export interface BlogPost {
  */
 export const ALL_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "lockout-service-dallas-locked-keys-in-car",
+    title: "Locked Keys in Your Car in Dallas? Here's What to Do",
+    excerpt:
+      "Locked keys in your car in Dallas? Our expert lockout service Dallas teams are ready to help. Call 24/7 for fast assistance in Texas. Learn more today!",
+    date: "2026-03-20",
+    category: "Roadside Tips",
+    readTime: "7 min read",
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+  },
+  {
     slug: "spring-car-maintenance-checklist-dallas",
     title: "Spring Car Maintenance Checklist for Dallas Drivers",
     excerpt:
