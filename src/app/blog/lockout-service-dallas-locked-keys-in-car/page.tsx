@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Locked keys in your car in Dallas? Our expert lockout service Dallas teams are ready to help. Call 24/7 for fast assistance in Texas. Learn more today!",
   alternates: {
-    canonical: "https://texastows.com/blog/lockout-service-dallas-locked-keys-in-car",
+    canonical: "/blog/lockout-service-dallas-locked-keys-in-car",
   },
 };
 

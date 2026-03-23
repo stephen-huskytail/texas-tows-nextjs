@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "SUVs and trucks need special towing considerations in Dallas. Learn which equipment is right for your vehicle, why AWD matters, and how to avoid damage. Call 24/7.",
   alternates: {
-    canonical: "https://texastows.com/blog/towing-suv-truck-dallas",
+    canonical: "/blog/towing-suv-truck-dallas",
   },
   openGraph: {
     title: "Towing an SUV or Truck in Dallas: What You Need to Know | Texas Tows",

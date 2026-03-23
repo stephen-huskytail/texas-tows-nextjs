@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Not all tow trucks are built the same. Learn the key differences between heavy-duty and light-duty towing, what each service covers, and how to pick the right one for your vehicle in Dallas.",
   alternates: {
-    canonical: "https://texastows.com/blog/heavy-duty-vs-light-duty-towing-dallas",
+    canonical: "/blog/heavy-duty-vs-light-duty-towing-dallas",
   },
 };
 

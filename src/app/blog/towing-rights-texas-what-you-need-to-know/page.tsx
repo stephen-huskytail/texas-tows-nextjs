@@ -5,7 +5,7 @@ import BlogPostLayout from "@/components/BlogPostLayout";
 export const metadata: Metadata = {
   title: "Your Towing Rights in Texas Explained",
   description: "Texas law governs towing pricing, documentation, and your right to retrieve your vehicle. Every Dallas driver should know these rules.",
-  alternates: { canonical: "https://www.texastows.com/blog/towing-rights-texas-what-you-need-to-know" },
+  alternates: { canonical: "/blog/towing-rights-texas-what-you-need-to-know" },
   openGraph: {
     title: "Your Towing Rights in Texas Explained | Texas Tows",
     description: "Texas law governs towing pricing, documentation, and your right to retrieve your vehicle. Every Dallas driver should know these rules.",

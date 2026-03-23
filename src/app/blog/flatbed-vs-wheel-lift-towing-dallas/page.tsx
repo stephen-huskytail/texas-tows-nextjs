@@ -5,7 +5,7 @@ import BlogPostLayout from "@/components/BlogPostLayout";
 export const metadata: Metadata = {
   title: "Flatbed vs. Wheel-Lift Towing Explained",
   description: "Flatbed vs. wheel-lift towing — what’s the difference and which one protects your vehicle? Here’s what every Dallas driver should know before calling.",
-  alternates: { canonical: "https://www.texastows.com/blog/flatbed-vs-wheel-lift-towing-dallas" },
+  alternates: { canonical: "/blog/flatbed-vs-wheel-lift-towing-dallas" },
   openGraph: {
     title: "Flatbed vs. Wheel-Lift Towing Explained | Texas Tows",
     description: "Flatbed vs. wheel-lift towing — what's the difference and which one protects your vehicle? Here's what every Dallas driver should know before calling.",

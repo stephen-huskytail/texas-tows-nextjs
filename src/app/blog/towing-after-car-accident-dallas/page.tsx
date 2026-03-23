@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Towing after a car accident in Dallas — learn what happens to your vehicle, your rights under Texas law, and how to choose a TDLR-licensed towing company. Call 24/7.",
   alternates: {
-    canonical: "https://texastows.com/blog/towing-after-car-accident-dallas",
+    canonical: "/blog/towing-after-car-accident-dallas",
   },
 };
 

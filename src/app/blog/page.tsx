@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Towing Tips & Advice Blog | Dallas TX",
   description:
     "Towing tips, roadside advice, and consumer guides from Texas Tows Inc. Know your rights, stay safe, and make smart towing decisions in Dallas.",
-  alternates: { canonical: "https://www.texastows.com/blog" },
+  alternates: { canonical: "/blog" },
   openGraph: {
     title: "Towing Tips & Advice Blog | Dallas TX | Texas Tows",
     description: "Towing tips, roadside advice, and consumer guides from Texas Tows Inc. Know your rights, stay safe, and make smart towing decisions in Dallas.",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Abandoned vehicle Texas law explained — learn how long your car can sit on a Texas highway before it gets towed, fees, and how to avoid impound. Call 24/7.",
   alternates: {
-    canonical: "https://texastows.com/blog/how-long-can-car-sit-on-side-of-road-texas",
+    canonical: "/blog/how-long-can-car-sit-on-side-of-road-texas",
   },
 };
 

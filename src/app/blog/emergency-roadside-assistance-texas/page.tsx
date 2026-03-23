@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Stranded on a Texas highway? Learn what to do during a roadside emergency, your rights under Texas law, how to choose a reliable provider, and how to prepare before it happens.",
   alternates: {
-    canonical: "https://texastows.com/blog/emergency-roadside-assistance-texas",
+    canonical: "/blog/emergency-roadside-assistance-texas",
   },
 };
 

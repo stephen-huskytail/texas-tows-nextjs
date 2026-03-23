@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Been in a car accident in Dallas? Here's exactly what to do in the first 30 minutes — from the scene to the tow — including your right to choose your own towing company.",
   alternates: {
-    canonical: "https://texastows.com/blog/towing-after-accident-dallas",
+    canonical: "/blog/towing-after-accident-dallas",
   },
 };
 

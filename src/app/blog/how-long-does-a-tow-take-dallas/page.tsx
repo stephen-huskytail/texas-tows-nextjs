@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Wondering how long a tow truck takes in Dallas? Learn average response times, what affects your wait, and exactly what happens from your first call to final drop-off.",
   alternates: {
-    canonical: "https://texastows.com/blog/how-long-does-a-tow-take-dallas",
+    canonical: "/blog/how-long-does-a-tow-take-dallas",
   },
 };
 

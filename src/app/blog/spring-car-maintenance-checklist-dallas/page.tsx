@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Prepare your vehicle for Dallas spring and summer heat with this seasonal maintenance checklist. Prevent breakdowns before they happen. Call Texas Tows 24/7.",
   alternates: {
-    canonical: "https://www.texastows.com/blog/spring-car-maintenance-checklist-dallas",
+    canonical: "/blog/spring-car-maintenance-checklist-dallas",
   },
   openGraph: {
     title: "Spring Car Maintenance Checklist for Dallas Drivers | Texas Tows",

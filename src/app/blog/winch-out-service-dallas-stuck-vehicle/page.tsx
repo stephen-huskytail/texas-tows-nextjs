@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Need a reliable winch out service in Dallas? Discover what our expert Dallas-based team does to get you back on the road. Call 24/7 for assistance or learn more.",
   alternates: {
-    canonical: "https://texastows.com/blog/winch-out-service-dallas-stuck-vehicle",
+    canonical: "/blog/winch-out-service-dallas-stuck-vehicle",
   },
 };
 
