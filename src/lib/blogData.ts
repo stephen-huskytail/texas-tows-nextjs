@@ -20,6 +20,16 @@ export interface BlogPost {
  */
 export const ALL_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "vehicle-transport-classic-car-dallas",
+    title: "Moving a Classic Car in Dallas: Why Enclosed Transport Matters",
+    excerpt:
+      "Transporting a classic car in Dallas? Learn why enclosed vehicle transport is the gold standard, how it works, and what to expect. Call Texas Tows 24/7.",
+    date: "2026-03-24",
+    category: "Towing Education",
+    readTime: "8 min read",
+    image: "/images/blog-vehicle-transport-classic-car-dallas.webp",
+  },
+  {
     slug: "lockout-service-dallas-locked-keys-in-car",
     title: "Locked Keys in Your Car in Dallas? Here's What to Do",
     excerpt:
