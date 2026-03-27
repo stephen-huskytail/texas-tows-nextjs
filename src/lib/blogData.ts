@@ -20,6 +20,16 @@ export interface BlogPost {
  */
 export const ALL_BLOG_POSTS: BlogPost[] = [
   {
+    slug: "towing-laws-private-property-texas",
+    title: "Towing Laws on Private Property in Texas: What Every Driver Needs to Know",
+    excerpt:
+      "Can you be towed from private property in Texas without warning? Learn your rights under Texas law — notice requirements, regulated fees, and how to fight a wrongful tow in Dallas.",
+    date: "2026-03-27",
+    category: "Legal & Rights",
+    readTime: "8 min read",
+    image: "/images/blog-towing-laws-private-property-texas.webp",
+  },
+  {
     slug: "vehicle-transport-classic-car-dallas",
     title: "Moving a Classic Car in Dallas: Why Enclosed Transport Matters",
     excerpt:
